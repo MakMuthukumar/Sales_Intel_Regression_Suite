@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="28" passed="28" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-04T12:08:19Z" name="Default suite" finished-at="2023-05-04T12:17:40Z" duration-ms="560474">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-05-04T12:08:19Z" name="Default test" finished-at="2023-05-04T12:17:40Z" duration-ms="560474">
+      <class name="org.runner.Runner">
+        <test-method is-config="true" signature="allureReportCleanup()[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:08:15Z" name="allureReportCleanup" finished-at="2023-05-04T12:08:19Z" duration-ms="4034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allureReportCleanup -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:08:19Z" name="setUpClass" finished-at="2023-05-04T12:08:20Z" duration-ms="572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:08:20Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:08:30Z" duration-ms="10222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Launching application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Salesforce Human Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:08:30Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:08:43Z" duration-ms="12301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Valid User Username and Valid Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Salesforce Human Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:08:43Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:09:36Z" duration-ms="53550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Export Salesforce Human Verified Companies From List View"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Salesforce Human Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:09:36Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:09:45Z" duration-ms="8292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logout the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Salesforce Human Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:09:45Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:09:48Z" duration-ms="3830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Launching application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Zoho Human Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:09:48Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:10:01Z" duration-ms="12283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Valid User Username and Valid Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Zoho Human Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:10:01Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:12:00Z" duration-ms="119712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Export Zoho Human Verified Companies From List View"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Zoho Human Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:12:00Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:12:09Z" duration-ms="8275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logout the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Zoho Human Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:12:09Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:12:15Z" duration-ms="6752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Launching application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export CSV Human Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:12:15Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:12:28Z" duration-ms="12263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Valid User Username and Valid Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export CSV Human Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:12:28Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:12:57Z" duration-ms="29636" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Export CSV Human Verified Companies From List View"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export CSV Human Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:12:57Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:13:06Z" duration-ms="8272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logout the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export CSV Human Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:13:06Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:13:10Z" duration-ms="4260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Launching application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Duplicates Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:13:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:13:22Z" duration-ms="12262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Valid User Username and Valid Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Duplicates Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:13:22Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:13:52Z" duration-ms="29591" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Export Duplicates Companies From List View"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Duplicates Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:13:52Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:14:00Z" duration-ms="8255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logout the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Duplicates Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:14:00Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:14:03Z" duration-ms="2803" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Launching application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Salesforce Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:14:03Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:14:15Z" duration-ms="12239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Valid User Username and Valid Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Salesforce Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:14:15Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:15:12Z" duration-ms="57090" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Export Salesforce Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Salesforce Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:15:12Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:15:20Z" duration-ms="8285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logout the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Salesforce Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:15:20Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:15:25Z" duration-ms="4433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Launching application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Zoho Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:15:25Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:15:37Z" duration-ms="12256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Valid User Username and Valid Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Zoho Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:15:37Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:16:38Z" duration-ms="60642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Export Zoho Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Zoho Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:16:38Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:16:46Z" duration-ms="8266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logout the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export Zoho Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:16:46Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:16:48Z" duration-ms="2271" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Launching application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export CSV Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:16:48Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:17:01Z" duration-ms="12245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Valid User Username and Valid Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export CSV Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:17:01Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:17:31Z" duration-ms="30012" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Export CSV Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export CSV Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:17:31Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-04T12:17:39Z" duration-ms="8309" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logout the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export CSV Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:17:39Z" name="tearDownClass" finished-at="2023-05-04T12:17:40Z" duration-ms="1067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="cucumberReportGenerate()[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2023-05-04T12:17:40Z" name="cucumberReportGenerate" finished-at="2023-05-04T12:17:42Z" duration-ms="1991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cucumberReportGenerate -->
+      </class> <!-- org.runner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

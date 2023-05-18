@@ -1,4 +1,8 @@
-Feature: Validate Search by Location
+Feature: Validate Search by Company Location
+
+  @First @Sanity @Test
+  Scenario: To validate SalesIntel application Launching application
+  	Given Launch the url
 
   @First @Sanity @Test
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
@@ -58,7 +62,6 @@ Feature: Validate Search by Location
     And Click On Do Not Save Button
     And Verify Location filter is Displayed
     And Click on Location Filter
-    And Click on Non USA Radio Button
     And Click on Country Input Box
     And Enter Non USA Country Name
     And Click on Search Button
@@ -74,7 +77,6 @@ Feature: Validate Search by Location
     And Click On Do Not Save Button
     And Verify Location filter is Displayed
     And Click on Location Filter
-    And Click on Global Radio Button
     And Click on Country Input Box
     And Enter Global Country Name
     And Click on Search Button

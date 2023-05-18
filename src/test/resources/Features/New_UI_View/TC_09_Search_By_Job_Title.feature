@@ -1,5 +1,8 @@
 Feature: Validate Search By Job Title
 
+  @First @Sanity @Test
+  Scenario: To validate SalesIntel application Launching application
+  	Given Launch the url
 
   @First @Sanity @Test
   Scenario: To validate SalesIntel application Valid User Username and Valid Password

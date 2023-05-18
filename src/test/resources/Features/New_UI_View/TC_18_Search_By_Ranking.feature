@@ -1,5 +1,9 @@
 Feature: To validate Search by Rankings
 
+  @First @Sanity @Test
+  Scenario: To validate SalesIntel application Launching application
+  	Given Launch the url
+  	
   @First @Sanity
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
     When Enter Valid Username

@@ -1,7 +1,8 @@
 Feature: Validate RoD Contacts Verification
-  #@First @Sanity @Test
-  #Scenario: To validate SalesIntel application Launching application
-    #Given Launch the url
+
+  @First @Sanity @Test
+  Scenario: To validate SalesIntel application Launching application
+    Given Launch the url
 
   @First @Sanity @Test
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
@@ -9,8 +10,8 @@ Feature: Validate RoD Contacts Verification
     And Enter Valid Password
     And Click On Login Button
 
-  @First @Smoke @Reg
-  @Sanity @Test
+  @First @Sanity @Reg
+  @Smoke @Test
   Scenario: To validate application Search Contact for ROD
     Then Click on Contact Radio Button for Universal User
     When Click on Search Button
@@ -23,19 +24,19 @@ Feature: Validate RoD Contacts Verification
     And Click on Search Button
     And Click On Searched Contact
 
-  @First @Smoke @Reg
-  @Sanity @Test
+  @First @Sanity @Reg
+  @Smoke @Test
   Scenario: To validate application "Request Verification"
     Then Verify Request Verification Button is displayed
     And Click On Request Verification Button
 
-  @First @Smoke @Reg
-  @Sanity @Test
+  @First @Sanity @Reg
+  @Smoke @Test
   Scenario: To validate application for Validate "Requested Verification"
     Then Verify Requested Verification Status
 
-  @First @Smoke @Reg
-  @Sanity @Test
+  @First @Sanity @Reg
+  @Smoke @Test
   Scenario: To validate application Contact Requested in ROD Section
      Then Verify RoD Tab is displayed
      And Click On RoD Tab

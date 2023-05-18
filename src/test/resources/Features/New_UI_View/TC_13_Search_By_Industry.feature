@@ -1,5 +1,9 @@
 Feature: To validate Search by Industry
 
+  @First @Sanity @Test
+  Scenario: To validate SalesIntel application Launching application
+  	Given Launch the url
+
   @First @Sanity
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
     When Enter Valid Username
@@ -36,7 +40,6 @@ Feature: To validate Search by Industry
     When Click On Clear Button
     And Click On Do Not Save Button
     And Click on Industry Filter
-    And Click on None of Page
     And Click on Select All Check Box
     Then Click on Search Button
     And Click on the First Contact in Search Result
@@ -46,7 +49,6 @@ Feature: To validate Search by Industry
     When Click On Clear Button
     And Click On Do Not Save Button
     And Click on Industry Filter
-    And Click on None of Page
     And Click on Industry Name Input box
     And Enter Industry Name
     And Click on Particular Industry

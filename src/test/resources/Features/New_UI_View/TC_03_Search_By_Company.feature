@@ -1,6 +1,10 @@
 Feature: Validate Search By Company
 
   @First @Sanity @Test
+  Scenario: To validate SalesIntel application Launching application
+  Given Launch the url
+  
+  @First @Sanity @Test
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
     And Enter Valid Username
     And Enter Valid Password

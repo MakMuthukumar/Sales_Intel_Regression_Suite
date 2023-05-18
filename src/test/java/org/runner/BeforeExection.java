@@ -20,7 +20,7 @@ public class BeforeExection extends Global {
 
 	@Before(order = 2)
 	public void beforeExecutedClass(Scenario scenario) {
-		System.out.println("Scenario Starts");
+		System.out.println("Scenario Starts"+"\n"+"Scenario Name: "+scenario.getName());
 	}
 
 	@After(order = 1)

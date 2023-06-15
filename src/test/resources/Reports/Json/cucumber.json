@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-05-19T04:57:24.081Z",
+        "start_timestamp": "2023-06-15T08:24:31.848Z",
         "before": [
           {
             "result": {
-              "duration": 3822300,
+              "duration": 3270500,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 1952400,
+              "duration": 711700,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15108097800,
+              "duration": 12386779800,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 373920245400,
+              "duration": 372939116800,
               "status": "passed"
             },
             "line": 6,
@@ -75,7 +75,7 @@
     "description": "",
     "id": "data-driver-testing",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/New_UI_View/TC_Data_Driver_Testing.feature",
+    "uri": "file:src/test/resources/Features/New_UI_View/TC_01_Data_Driver_Testing.feature",
     "tags": []
   }
 ]

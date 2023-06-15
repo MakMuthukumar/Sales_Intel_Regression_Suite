@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="389.096958">
-    <testcase classname="Data Driver testing" name="To validate the login logout with different credentials" time="389.096958">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="385.391661">
+    <testcase classname="Data Driver testing" name="To validate the login logout with different credentials" time="385.391661">
         <system-out><![CDATA[Given Launch the url........................................................passed
 When Test the Login and Logout with all Valid and Invalid Credentials available in the Sheet.passed
 ]]></system-out>

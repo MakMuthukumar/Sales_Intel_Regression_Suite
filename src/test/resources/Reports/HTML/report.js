@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/New_UI_View/TC_Data_Driver_Testing.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/New_UI_View/TC_01_Data_Driver_Testing.feature");
 formatter.feature({
   "name": "Data Driver testing",
   "description": "",

@@ -1,74 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="265.785862">
-    <testcase classname="To validate SalesIntel Tab" name="To validate SalesIntel application Launching application" time="9.208948">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="389.096958">
+    <testcase classname="Data Driver testing" name="To validate the login logout with different credentials" time="389.096958">
         <system-out><![CDATA[Given Launch the url........................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="To validate SalesIntel Tab" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.322379">
-        <system-out><![CDATA[When Enter Valid Username...................................................passed
-And Enter Valid Password....................................................passed
-Then Click On Login Button..................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="To validate SalesIntel Tab" name="To Validate Search Box with Company Name in SalesIntel Tab" time="37.560226">
-        <system-out><![CDATA[When Check Search Box is displayed in SalesIntel Tab........................passed
-And Click on Search Box in SalesIntel Tab...................................passed
-And Enter Company Name in the Search Box....................................passed
-And Click on Search Button in The SalesIntel Tab............................passed
-And Click on Companies Tab..................................................passed
-And Validate the Searched Company Name In Search Result.....................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="To validate SalesIntel Tab" name="To Validate Search Box with Company Domain in SalesIntel Tab" time="31.026843">
-        <system-out><![CDATA[When Click On Clear Button..................................................passed
-And Click On Do Not Save Button.............................................passed
-And Check Search Box is displayed in SalesIntel Tab.........................passed
-And Click on Search Box in SalesIntel Tab...................................passed
-And Enter Company Domain in the Search Box..................................passed
-And Click on Search Button in The SalesIntel Tab............................passed
-And Click on Companies Tab..................................................passed
-And Validate the Searched Company Domain In Search Result...................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="To validate SalesIntel Tab" name="To Validate Recommended Lists in SalesIntel Tab" time="20.668045">
-        <system-out><![CDATA[When Click On Clear Button..................................................passed
-And Click On Do Not Save Button.............................................passed
-And Check Recommended List is displayed in SalesIntel Tab...................passed
-And Click on first Recommended List.........................................passed
-Then Validate Search Results for Recommended List...........................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="To validate SalesIntel Tab" name="To Validate Saved Searches in SalesIntel Tab" time="50.953004">
-        <system-out><![CDATA[When Click on Back To Search Result.........................................passed
-And Click On Clear Button...................................................passed
-And Click On Do Not Save Button.............................................passed
-And Click on View all Saved Searches........................................passed
-And Click On SalesIntel Tab.................................................passed
-And Check Saved Searches are displayed in SalesIntel Tab....................passed
-And Click on the First Saved Search in SI tab...............................passed
-Then Validate Search Result for Saved Searches..............................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="To validate SalesIntel Tab" name="To validate application scroll Down" time="15.224603">
-        <system-out><![CDATA[When Click On Clear Button..................................................passed
-And Move the SalesIntel Website Screen Down.................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="To validate SalesIntel Tab" name="To validate application Upload a file" time="77.633528">
-        <system-out><![CDATA[When Click On Browse Button.................................................passed
-And Upload File From Local Directory........................................passed
-And Select Contact List Option For Data enrichment..........................passed
-And Click on Next button....................................................passed
-And Enter List Name For Data Enrichment.....................................passed
-And Click on Next button....................................................passed
-And Click On Save List under Data Enrichment................................passed
-And Click on Close Button...................................................passed
-Then Check the Added List in the List Tab...................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="To validate SalesIntel Tab" name="Logout the application" time="11.188286">
-        <system-out><![CDATA[When Click On Setting Options...............................................passed
-Then Click On Logout Options................................................passed
+When Test the Login and Logout with all Valid and Invalid Credentials available in the Sheet.passed
 ]]></system-out>
     </testcase>
 </testsuite>

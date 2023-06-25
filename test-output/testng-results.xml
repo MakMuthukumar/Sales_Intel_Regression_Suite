@@ -1,44 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-15T08:24:30Z" name="Default suite" finished-at="2023-06-15T08:30:57Z" duration-ms="387190">
+  <suite started-at="2023-06-15T13:22:58Z" name="Default suite" finished-at="2023-06-15T13:44:48Z" duration-ms="1309927">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@67d18ed7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-06-15T08:24:30Z" name="Default test" finished-at="2023-06-15T08:30:57Z" duration-ms="387190">
+    <test started-at="2023-06-15T13:22:58Z" name="Default test" finished-at="2023-06-15T13:44:48Z" duration-ms="1309927">
       <class name="org.runner.Runner">
-        <test-method is-config="true" signature="allureReportCleanup()[pri:0, instance:org.runner.Runner@67d18ed7]" started-at="2023-06-15T08:24:26Z" name="allureReportCleanup" finished-at="2023-06-15T08:24:30Z" duration-ms="4070" status="PASS">
+        <test-method is-config="true" signature="allureReportCleanup()[pri:0, instance:org.runner.Runner@67d18ed7]" started-at="2023-06-15T13:22:54Z" name="allureReportCleanup" finished-at="2023-06-15T13:22:58Z" duration-ms="4060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allureReportCleanup -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:org.runner.Runner@67d18ed7]" started-at="2023-06-15T08:24:30Z" name="setUpClass" finished-at="2023-06-15T08:24:31Z" duration-ms="728" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:org.runner.Runner@67d18ed7]" started-at="2023-06-15T13:22:58Z" name="setUpClass" finished-at="2023-06-15T13:22:59Z" duration-ms="636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@67d18ed7]" started-at="2023-06-15T08:24:31Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-15T08:30:57Z" duration-ms="385760" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@67d18ed7]" started-at="2023-06-15T13:22:59Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-15T13:23:11Z" duration-ms="11276" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["To validate the login logout with different credentials"]]>
+                <![CDATA["To validate SalesIntel application Launching application"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Data Driver testing"]]>
+                <![CDATA["To Validate Application Export CSV Machine Verified Companies From List View"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.runner.Runner@67d18ed7]" started-at="2023-06-15T08:30:57Z" name="tearDownClass" finished-at="2023-06-15T08:30:57Z" duration-ms="463" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@67d18ed7]" started-at="2023-06-15T13:23:11Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-15T13:23:23Z" duration-ms="12328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Valid User Username and Valid Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export CSV Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@67d18ed7]" started-at="2023-06-15T13:23:23Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-15T13:44:36Z" duration-ms="1273314" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application adding Company file into List View"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export CSV Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=114.0.5735.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NHCLPT520', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56052}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 827549b8ab91f1b440269a2d43486051]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=114.0.5735.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NHCLPT520', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56052}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 827549b8ab91f1b440269a2d43486051
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+at org.base.Global.clickButton(Global.java:54)
+at org.stepdefinition.Steps.adding_The_Multiple_Company_Entry_Into_List_View(Steps.java:8398)
+at ✽.Adding The Multiple Company Entry Into List View(file:src/test/resources/Features/New_UI_View/TC_51_Adding_Company_File_To_List_Functionality.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@67d18ed7]" started-at="2023-06-15T13:44:36Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-15T13:44:47Z" duration-ms="11283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logout the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To Validate Application Export CSV Machine Verified Companies From List View"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.runner.Runner@67d18ed7]" started-at="2023-06-15T13:44:47Z" name="tearDownClass" finished-at="2023-06-15T13:44:48Z" duration-ms="898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="cucumberReportGenerate()[pri:0, instance:org.runner.Runner@67d18ed7]" started-at="2023-06-15T08:30:57Z" name="cucumberReportGenerate" finished-at="2023-06-15T08:30:58Z" duration-ms="862" status="PASS">
+        <test-method is-config="true" signature="cucumberReportGenerate()[pri:0, instance:org.runner.Runner@67d18ed7]" started-at="2023-06-15T13:44:48Z" name="cucumberReportGenerate" finished-at="2023-06-15T13:44:50Z" duration-ms="1732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cucumberReportGenerate -->

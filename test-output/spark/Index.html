@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">SalesIntel RevDriver Automation</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 15, 2023 13:54:30</span></a>
+<a href="#"><span class="badge badge-primary">Jun 15, 2023 18:52:59</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -71,7 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,33 +84,33 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@First</a><a class="dropdown-item" href="#">@Sanity</a><a class="dropdown-item" href="#">@Data</a>
+<a class="dropdown-item" href="#">@First</a><a class="dropdown-item" href="#">@Add_Company</a><a class="dropdown-item" href="#">@Sanity</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
-          <div class="status-avatar pass-bg">
-            <i class="fa fa-check text-white"></i>
+          <div class="status-avatar fail-bg">
+            <i class="fa fa-times text-white"></i>
           </div>
           <div class="test-detail">
             <span class="meta text-white badge badge-sm"></span>
-            <p class="name">Data Driver testing</p>
-            <p class="text-sm"><span>13:54:31 pm</span> / <span>385.35 secs</span></p>
+            <p class="name">To Validate Application Export CSV Machine Verified Companies From List View</p>
+            <p class="text-sm"><span>18:53:00 pm</span> / <span>1,307.946 secs</span></p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
 <div class='float-right'><span class='badge badge-default'>#test-id=1</span></div>
-<h5 class="test-status text-pass">Data Driver testing</h5>
-<span class='badge badge-success'>06.15.2023 13:54:31</span>
-<span class='badge badge-danger'>06.15.2023 14:00:57</span>
-<span class='badge badge-default'>385.35 secs</span>
+<h5 class="test-status text-fail">To Validate Application Export CSV Machine Verified Companies From List View</h5>
+<span class='badge badge-success'>06.15.2023 18:53:00</span>
+<span class='badge badge-danger'>06.15.2023 19:14:47</span>
+<span class='badge badge-default'>1,307.946 secs</span>
 </div>
 </div>
 </div>
@@ -113,7 +118,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>To validate the login logout with different credentials</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>To validate SalesIntel application Launching application</div>
       </div>
     </div>
         <div class="collapse">
@@ -123,8 +128,113 @@
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="Steps.I_Test_the_Login_and_Logout_with_all_Valid_and_Invalid_Credentials_available_in_the_Sheet()">
-                <span>When Test the Login and Logout with all Valid and Invalid Credentials available in the Sheet</span>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>To validate SalesIntel application Valid User Username and Valid Password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Steps.i_enter_the_username()">
+                <span>When Enter Valid Username</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.i_enter_the_password()">
+                <span>And Enter Valid Password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.I_Click_Login_Button()">
+                <span>Then Click On Login Button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="12"><span class="badge log fail-bg mr-2">Fail</span>To validate SalesIntel application adding Company file into List View</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="Steps.click_on_Lists_View()">
+                <span>When Click on Lists View</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="Steps.adding_The_Multiple_Company_Entry_Into_List_View()">
+                <span>And Adding The Multiple Company Entry Into List View</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=114.0.5735.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NHCLPT520', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56052}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 827549b8ab91f1b440269a2d43486051
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+	at org.base.Global.clickButton(Global.java:54)
+	at org.stepdefinition.Steps.adding_The_Multiple_Company_Entry_Into_List_View(Steps.java:8398)
+	at ?.Adding The Multiple Company Entry Into List View(file:src/test/resources/Features/New_UI_View/TC_51_Adding_Company_File_To_List_Functionality.feature:16)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" >
+                <span>BeforeExection.afterExecutedClass(Scenario)</span>
+      <div>
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Logout the application</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Steps.I_click_welcome_Logout()">
+                <span>When Click On Setting Options</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.I_click_Logout()">
+                <span>Then Click On Logout Options</span>
       <div>
       </div>
               </div>
@@ -143,7 +253,78 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left">
+<li>
+<a href="">
+<span class="font-size-14">Exception</span>
+</a>
+</li>
+</ul>
+<ul class="tools text-right">
+<li>
+<a href="#">
+<span class="badge badge-primary">1</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="open-test">
+<div class="test-detail">
+<p class="name">org.openqa.selenium.ElementNotInteractableException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementNotInteractableException</h4>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:53:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>And Adding The Multiple Company Entry Into List View</a>
+<div class="">
+<span class="badge badge-default">To validate SalesIntel application adding Company file into List View</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul>
+<li>
+<a class="back-to-test" href="javascript:void(0)">
+<i class="fa fa-arrow-left"></i>
+</a>
+</li>
+</ul>
+</div>
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Tags</span></a></li></ul>
@@ -154,15 +335,17 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@First</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@First</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -175,11 +358,41 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:54:31 pm</td>
+<td>18:53:00 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>To validate the login logout with different credentials</a>
+<a href="#" class="linked" test-id='1' id='2'>To validate SalesIntel application Launching application</a>
 <div class="">
-<span class="badge badge-default">Data Driver testing.To validate the login logout with different credentials</span>
+<span class="badge badge-default">To Validate Application Export CSV Machine Verified Companies From List View.To validate SalesIntel application Launching application</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:53:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>To validate SalesIntel application Valid User Username and Valid Password</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Export CSV Machine Verified Companies From List View.To validate SalesIntel application Valid User Username and Valid Password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:53:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>To validate SalesIntel application adding Company file into List View</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Export CSV Machine Verified Companies From List View.To validate SalesIntel application adding Company file into List View</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:14:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Logout the application</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Export CSV Machine Verified Companies From List View.Logout the application</span>
 </div>
 </td>
 </tr>
@@ -190,15 +403,85 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Add_Company</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Add_Company</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:53:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>To validate SalesIntel application Launching application</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Export CSV Machine Verified Companies From List View.To validate SalesIntel application Launching application</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:53:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>To validate SalesIntel application Valid User Username and Valid Password</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Export CSV Machine Verified Companies From List View.To validate SalesIntel application Valid User Username and Valid Password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:53:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>To validate SalesIntel application adding Company file into List View</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Export CSV Machine Verified Companies From List View.To validate SalesIntel application adding Company file into List View</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:14:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Logout the application</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Export CSV Machine Verified Companies From List View.Logout the application</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@Sanity</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@Sanity</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -211,47 +494,41 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:54:31 pm</td>
+<td>18:53:00 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>To validate the login logout with different credentials</a>
+<a href="#" class="linked" test-id='1' id='2'>To validate SalesIntel application Launching application</a>
 <div class="">
-<span class="badge badge-default">Data Driver testing.To validate the login logout with different credentials</span>
+<span class="badge badge-default">To Validate Application Export CSV Machine Verified Companies From List View.To validate SalesIntel application Launching application</span>
 </div>
 </td>
 </tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@Data</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Data</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:54:31 pm</td>
+<td>18:53:11 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>To validate the login logout with different credentials</a>
+<a href="#" class="linked" test-id='1' id='6'>To validate SalesIntel application Valid User Username and Valid Password</a>
 <div class="">
-<span class="badge badge-default">Data Driver testing.To validate the login logout with different credentials</span>
+<span class="badge badge-default">To Validate Application Export CSV Machine Verified Companies From List View.To validate SalesIntel application Valid User Username and Valid Password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:53:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>To validate SalesIntel application adding Company file into List View</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Export CSV Machine Verified Companies From List View.To validate SalesIntel application adding Company file into List View</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:14:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Logout the application</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Export CSV Machine Verified Companies From List View.Logout the application</span>
 </div>
 </td>
 </tr>
@@ -281,25 +558,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 15, 2023 13:54:30</h3>
+<h3>Jun 15, 2023 18:52:59</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 15, 2023 14:00:57</h3>
+<h3>Jun 15, 2023 19:14:48</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -315,12 +592,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -338,9 +615,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='75%'><b>3</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='25%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -358,9 +635,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>2</b> steps passed</small></div>
+<div><small data-tooltip='88%'><b>8</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
+<small data-tooltip='11%'><b>1</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -376,27 +653,27 @@
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@First</td>
+<td>3</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>@Add_Company</td>
+<td>3</td>
+<td>1</td>
 <td>0</td>
-<td>100%</td>
+<td>0</td>
+<td>75%</td>
 </tr>
 <tr>
 <td>@Sanity</td>
+<td>3</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@Data</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>75%</td>
 </tr>
 </tbody>
 </table></div>
@@ -407,19 +684,19 @@
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 0,
+passChild: 3,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 2,
-failGrandChild: 0,
+passGrandChild: 8,
+failGrandChild: 1,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,

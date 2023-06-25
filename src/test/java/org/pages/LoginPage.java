@@ -1187,6 +1187,26 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "(//div[@class='col-12']//child::ul[@class='list-unstyled lists']//child::li)[1]//child::span[@class='a cursor-pointer']")
 	private WebElement saved_Search_Results;
 	
+	@FindBy(xpath = "//button[@type='button' and @class='btn btn-primary rounded']")
+	private WebElement create_List_Button;
+	
+	@FindBy(xpath = "//a[@class='dropdown-item' and contains(text(),'Create Company List')]")
+	private WebElement create_Company_List_Button;
+	
+	@FindBy(xpath = "//input[@type='text' and @placeholder='Enter a name for your list']")
+	private WebElement list_Name_Text_Field;
+	
+	@FindBy(xpath = "//label[contains(text(),'Choose File')]")
+	private WebElement choose_File_Button;
+	
+	@FindBy(xpath = "(//div[@class='col-sm-9 col-form-label'])[3]")
+	private WebElement availability_Combobox_Field;
+	
+	@FindBy(xpath = "//span[contains(text(),'Team') and @class='ng-option-label']")
+	private WebElement team_field;
+	
+	@FindBy(xpath = "//button[contains(text(),'Save List')]")
+	private WebElement save_List_Button;
 	
 	public WebElement getRequestVerificationButton() {
 		return RequestVerificationButton;
@@ -2817,6 +2837,34 @@ public class LoginPage extends Global {
 
 	public WebElement getSaved_Search_Results() {
 		return saved_Search_Results;
+	}
+
+	public WebElement getCreate_List_Button() {
+		return create_List_Button;
+	}
+
+	public WebElement getCreate_Company_List_Button() {
+		return create_Company_List_Button;
+	}
+
+	public WebElement getList_Name_Text_Field() {
+		return list_Name_Text_Field;
+	}
+
+	public WebElement getChoose_File_Button() {
+		return choose_File_Button;
+	}
+
+	public WebElement getAvailability_Combobox_Field() {
+		return availability_Combobox_Field;
+	}
+
+	public WebElement getTeam_field() {
+		return team_field;
+	}
+
+	public WebElement getSave_List_Button() {
+		return save_List_Button;
 	}
 
 }

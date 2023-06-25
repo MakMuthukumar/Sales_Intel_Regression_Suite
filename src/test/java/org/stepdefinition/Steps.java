@@ -38,6 +38,7 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -8358,6 +8359,112 @@ public class Steps extends Global {
 					PageObjectManager.getInstance().getLoginPage().getBack_To_Search_Results());
 			log.info("Click on Back To Search Result");
 		}
+
+	}
+
+	@When("Adding The Multiple Company Entry Into List View")
+	public void adding_The_Multiple_Company_Entry_Into_List_View() throws Throwable {
+
+		JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 5);
+		int company_Count = Integer.parseInt(ReadDatafromJson("Contact_Name", "Company_Count"));
+		for (int i = 0; i < company_Count; i++) {
+
+			/**
+			 * Click on Create List
+			 */
+			webDriverWait.until(ExpectedConditions.visibilityOf(
+					PageObjectManager.getInstance().getLoginPage().getCreate_List_Button()));
+			javascriptExecutor.executeScript("arguments[0].click();",
+					PageObjectManager.getInstance().getLoginPage().getCreate_List_Button());
+			Thread.sleep(2000);
+
+			/**
+			 * Click on Create Company List
+			 */
+			webDriverWait.until(ExpectedConditions.visibilityOf(
+					PageObjectManager.getInstance().getLoginPage().getCreate_Company_List_Button()));
+			javascriptExecutor.executeScript("arguments[0].click();",
+					PageObjectManager.getInstance().getLoginPage().getCreate_Company_List_Button());
+			Thread.sleep(3000);
+
+			/**
+			 * Enter the company name in text field
+			 */
+
+			String job_Name = ReadDatafromJson("Contact_Name", "Company_Field") + " "
+					+ new SimpleDateFormat("dd-M-yyyy hh:mm:ss").format(new Date());
+			Thread.sleep(5000);
+			clickButton(PageObjectManager.getInstance().getLoginPage().getList_Name_Text_Field());
+			Thread.sleep(5000);
+			enterData(PageObjectManager.getInstance().getLoginPage().getList_Name_Text_Field(), job_Name);
+			Thread.sleep(2000);
+
+			/**
+			 * Click on Choose File Button
+			 */
+			webDriverWait.until(ExpectedConditions.visibilityOf(
+					PageObjectManager.getInstance().getLoginPage().getChoose_File_Button()));
+			javascriptExecutor.executeScript("arguments[0].click();",
+					PageObjectManager.getInstance().getLoginPage().getChoose_File_Button());
+			Thread.sleep(2000);
+
+			/**
+			 * Upload Company File From CSV File Store Directory
+			 */
+			uploadCompanyListfilefromlocal(System.getProperty("user.dir")
+					+ "\\src\\test\\resources\\CSV_File_Store\\company_652023_0923pm.csv");
+			Thread.sleep(2000);
+			
+			/**
+			 * Click on Availability Combo Box
+			 */
+			webDriverWait.until(ExpectedConditions.visibilityOf(
+					PageObjectManager.getInstance().getLoginPage().getAvailability_Combobox_Field()));
+			clickButton(PageObjectManager.getInstance().getLoginPage().getAvailability_Combobox_Field());
+			Thread.sleep(2000);
+			
+			/**
+			 * Click on Team Option
+			 */
+			webDriverWait.until(ExpectedConditions.visibilityOf(
+					PageObjectManager.getInstance().getLoginPage().getTeam_field()));
+			javascriptExecutor.executeScript("arguments[0].click();",
+					PageObjectManager.getInstance().getLoginPage().getTeam_field());
+			Thread.sleep(2000);
+			
+			/**
+			 * Click on Next
+			 */
+			webDriverWait.until(ExpectedConditions.visibilityOf(
+					PageObjectManager.getInstance().getLoginPage().getNextButton()));
+			javascriptExecutor.executeScript("arguments[0].click();",
+					PageObjectManager.getInstance().getLoginPage().getNextButton());
+			Thread.sleep(2000);
+			
+			/**
+			 * Click on Save List Button
+			 */
+			webDriverWait.until(ExpectedConditions.visibilityOf(
+					PageObjectManager.getInstance().getLoginPage().getSave_List_Button()));
+			Thread.sleep(1000);
+			javascriptExecutor.executeScript("arguments[0].click();",
+					PageObjectManager.getInstance().getLoginPage().getSave_List_Button());
+			Thread.sleep(2000);
+			
+			/**
+			 * Click on Close Button
+			 */
+			webDriverWait.until(ExpectedConditions.visibilityOf(
+					PageObjectManager.getInstance().getLoginPage().getCloseButton()));
+			Thread.sleep(1000);
+			javascriptExecutor.executeScript("arguments[0].click();",
+					PageObjectManager.getInstance().getLoginPage().getCloseButton());
+			Thread.sleep(5000);
+			System.out.println("Adding The Company Entry Into List View: "+(i+1));
+			
+		}
+		log.info("Adding The Multiple Company Entry Into List View");
 
 	}
 

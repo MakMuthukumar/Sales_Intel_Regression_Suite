@@ -1,27 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="1307.889977">
-    <testcase classname="To Validate Application Export CSV Machine Verified Companies From List View" name="To validate SalesIntel application Launching application" time="10.986042">
-        <system-out><![CDATA[Given Launch the url........................................................passed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="154.455909">
+    <testcase classname="To Validate Application Sales Intel Enrich Intel" name="To validate Salesforce application Launching application" time="5.167676">
+        <system-out><![CDATA[Given Launch the Sales Force url............................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To Validate Application Export CSV Machine Verified Companies From List View" name="To validate SalesIntel application Valid User Username and Valid Password" time="12.322386">
-        <system-out><![CDATA[When Enter Valid Username...................................................passed
-And Enter Valid Password....................................................passed
+    <testcase classname="To Validate Application Sales Intel Enrich Intel" name="To validate Salesforce application Valid User Username and Valid Password" time="25.211428">
+        <system-out><![CDATA[When Enter Valid Username in Sales Force....................................passed
+And Enter Valid Password in Sales Force.....................................passed
+And Click On Remember me Checkbox...........................................passed
+And Click On Login Button in Sales Force....................................passed
+And Click On Remember me Later if popup comes...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To Validate Application Sales Intel Enrich Intel" name="To validate SalesIntel application Valid User Username and Valid Password" time="31.552898">
+        <system-out><![CDATA[When Click on SalesIntel Tab................................................passed
+And Enter Valid Username in SalesIntel Tab..................................passed
+And Enter Valid Password in SalesIntel Tab..................................passed
 Then Click On Login Button..................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To Validate Application Export CSV Machine Verified Companies From List View" name="To validate SalesIntel application adding Company file into List View" time="1273.303747">
-        <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=114.0.5735.110)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NHCLPT520', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56052}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 827549b8ab91f1b440269a2d43486051&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:567)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)&#13;&#10;&#9;at org.base.Global.clickButton(Global.java:54)&#13;&#10;&#9;at org.stepdefinition.Steps.adding_The_Multiple_Company_Entry_Into_List_View(Steps.java:8398)&#13;&#10;&#9;at ✽.Adding The Multiple Company Entry Into List View(file:src/test/resources/Features/New_UI_View/TC_51_Adding_Company_File_To_List_Functionality.feature:16)&#13;&#10;"><![CDATA[When Click on Lists View....................................................passed
-And Adding The Multiple Company Entry Into List View........................failed
+    <testcase classname="To Validate Application Sales Intel Enrich Intel" name="To validate SalesIntel application - Selecting multiple contacts" time="62.70307">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type='submit' and contains(text(),'Submit')]&quot;}&#10;  (Session info: chrome=114.0.5735.134)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NHCLPT520', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 10a55de9220c1f718af3342ff7ef371e&#10;*** Element info: {Using=xpath, value=//button[@type='submit' and contains(text(),'Submit')]}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at jdk.proxy2/jdk.proxy2.$Proxy28.getWrappedElement(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)&#13;&#10;&#9;at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;&#10;&#9;at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)&#13;&#10;&#9;at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)&#13;&#10;&#9;at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)&#13;&#10;&#9;at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)&#13;&#10;&#9;at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;&#10;&#9;at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)&#13;&#10;&#9;at org.stepdefinition.Steps.click_On_Submit_Button(Steps.java:7310)&#13;&#10;&#9;at ✽.Click On Submit Button(file:src/test/resources/Features/New_UI_View/TC_51_Sales_Intel_EnrichIntel.feature:31)&#13;&#10;"><![CDATA[When Wait for Page load.....................................................passed
+And Click on Contact Radio Button...........................................passed
+And Click on Search Button..................................................passed
+And Select Multiple contact to Add Contact List.............................passed
+And Click On Bulk Actions Button............................................passed
+And Click On Export Salesforce option.......................................passed
+And Wait for Page load......................................................passed
+And Click On Submit Button..................................................failed
 
 StackTrace:
-org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=114.0.5735.110)
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit' and contains(text(),'Submit')]"}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NHCLPT520', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+System info: host: 'NHCLPT520', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56052}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 827549b8ab91f1b440269a2d43486051
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 10a55de9220c1f718af3342ff7ef371e
+*** Element info: {Using=xpath, value=//button[@type='submit' and contains(text(),'Submit')]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -33,21 +50,36 @@ Session ID: 827549b8ab91f1b440269a2d43486051
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-	at org.base.Global.clickButton(Global.java:54)
-	at org.stepdefinition.Steps.adding_The_Multiple_Company_Entry_Into_List_View(Steps.java:8398)
-	at ✽.Adding The Multiple Company Entry Into List View(file:src/test/resources/Features/New_UI_View/TC_51_Adding_Company_File_To_List_Functionality.feature:16)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at org.stepdefinition.Steps.click_On_Submit_Button(Steps.java:7310)
+	at ✽.Click On Submit Button(file:src/test/resources/Features/New_UI_View/TC_51_Sales_Intel_EnrichIntel.feature:31)
 ]]></failure>
     </testcase>
-    <testcase classname="To Validate Application Export CSV Machine Verified Companies From List View" name="Logout the application" time="11.277802">
-        <system-out><![CDATA[When Click On Setting Options...............................................passed
-Then Click On Logout Options................................................passed
+    <testcase classname="To Validate Application Sales Intel Enrich Intel" name="To validate Salesforce application - adding multiple contacts(First Lead) in leads page" time="29.820837">
+        <system-out><![CDATA[When Wait for Page load.....................................................passed
+And Click on Leads Tab......................................................passed
+And Click on New Button.....................................................passed
+And Enter the First Lead - First Name Input Field...........................passed
+And Enter the First Lead - Last Name Input Field............................passed
+And Enter the First Lead - Company Input Field..............................passed
+And Enter the First Lead - Phone Input Field................................passed
+And Enter the First Lead - Email Input Field................................passed
+And Click On Save Button....................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

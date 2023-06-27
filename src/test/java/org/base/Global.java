@@ -24,6 +24,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import net.masterthought.cucumber.Configuration;
@@ -41,7 +42,9 @@ public class Global {
 	public static WebDriver getDriver() {
 		if (driver == null) {
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions chromeOptions = new ChromeOptions();
+			chromeOptions.addArguments("--disable-notifications");
+			driver = new ChromeDriver(chromeOptions);
 		}
 		return driver;
 	}

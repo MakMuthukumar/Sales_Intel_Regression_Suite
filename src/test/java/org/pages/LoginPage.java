@@ -1,5 +1,7 @@
 package org.pages;
 
+import java.util.List;
+
 import org.base.Global;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,22 +34,22 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//input[@type='password']")
 	private WebElement password;
-	
+
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement loginCTA;
-	
+
 	@FindBy(xpath = "//span[text()='Name']")
 	private WebElement ContactName;
-	
+
 	@FindBy(xpath = "//*[@name='firstName']")
 	private WebElement FirstName;
-	
+
 	@FindBy(xpath = "//*[@name='lastName']")
 	private WebElement LastName;
-	
+
 	@FindBy(xpath = "(//span[contains(text(),'Email')])[1]")
 	private WebElement contactemail;
-	
+
 	@FindBy(xpath = "//*[@type='submit' and @class='btn btn-primary btn-search']")
 	private WebElement SearchButton;
 
@@ -152,16 +154,16 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "(//div[contains(text(),'Vice President')])[1]")
 	private WebElement VicePresidentJobLevelInResult;
-	
+
 	@FindBy(xpath = "(//div[contains(text(),'Director')])[1]")
 	private WebElement DirectorsJobLevelInResult;
-	
+
 	@FindBy(xpath = "(//div[contains(text(),'Manager')])[1]")
 	private WebElement ManagersJobLevelInResult;
-	
+
 	@FindBy(xpath = "(//div[contains(text(),'Key Influencer')])[1]")
 	private WebElement KeyInfluencersJobLevelInResult;
-	
+
 	@FindBy(xpath = "//*[contains(text(),'Role')]")
 	private WebElement Rolesection;
 
@@ -245,7 +247,7 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//Label[contains(text(),'Managers')]")
 	private WebElement ManagersJobLevelFilter;
-	
+
 	@FindBy(xpath = "//Label[contains(text(),'Key Influencers')]")
 	private WebElement KeyInfluencersJobLevelFilter;
 
@@ -296,10 +298,10 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "(//div[contains(text(),'Metro Areas')])[1]/../div[2]/input")
 	private WebElement MetroAreaTextFieldForContact;
-	
+
 	@FindBy(xpath = "(//span[contains(text(),'Albany, GA')])[2]")
 	private WebElement MetroAreatInSearchResult;
-	
+
 	@FindBy(xpath = "(//input[@type='radio'])[3]")
 	private WebElement NonUsaRadioButton;
 
@@ -317,7 +319,7 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "(//input[@type='text'])[15]")
 	private WebElement CountryBoxForContact;
-	
+
 	@FindBy(xpath = "//span[contains(text(),'Keywords')]")
 	private WebElement KeywordsFilter;
 
@@ -461,7 +463,7 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//table[@role='grid']/tbody/tr[2]/td[2]")
 	private WebElement CustomDateForLastModified;
-	
+
 	@FindBy(xpath = "//table[@role='grid']/tbody/tr[2]/td[2]/../../../../../div[1]/bs-datepicker-navigation-view/button[2]/span")
 	private WebElement MonthFromCustomDate;
 
@@ -551,10 +553,10 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]/../../../../div[1]/div/div[3]/div[1]/..")
 	private WebElement FirstCompanyInResult;
-	
+
 	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]/../../../../../div/div[1]/div/div[3]/div[1]/a")
 	private WebElement FirstCompanyLinkInResult;
-	
+
 	@FindBy(xpath = "(//span[contains(text(),'Netflix') or contains(text(),'Hulu')])[3]")
 	private WebElement TopicThresholdInResult;
 
@@ -590,7 +592,7 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//label[contains(text(),' Include Team Searches')]/input")
 	private WebElement IncludeTeamCheckBox;
-	
+
 	@FindBy(xpath = "//strong[contains(text(),'Name')]/../../../../../../article/div[1]/div/div/div/div[1]/div/div[2]/span/span")
 	private WebElement FirstSearchedContact;
 
@@ -635,7 +637,7 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//div[@title='Albany, OR']")
 	private WebElement AlbanyORMetroArea;
-	
+
 	@FindBy(xpath = "(//div[contains(text(),'Manager')])[1]")
 	private WebElement TitleInResult;
 
@@ -679,7 +681,7 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "(//strong[@class='cursor-pointer'])[6]")
 	private WebElement SortbyLocation;
-	
+
 	@FindBy(xpath = "//*[contains(text(),'Vanessa DaSilva')]")
 	private WebElement ContactSearch1;
 
@@ -766,7 +768,7 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//button[@type='button' and contains(text(),'Search Saved')]")
 	private WebElement SearchSavedButton;
-	
+
 	@FindBy(xpath = "(//strong[contains(text(),'NAME')])[1]/../../../../tbody/tr[1]/td[4]/div/button[1]/i")
 	private WebElement EditButtonForFirstSavedSearch;
 
@@ -793,7 +795,7 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//input[@type='text' and @formcontrolname='name']/../button/i")
 	private WebElement SaveEditedSuppressionListName;
-	
+
 	@FindBy(xpath = "//th[contains(text(),'Name')]/../../../tbody/tr[2]/td/input")
 	private WebElement FirstRecordInEditList;
 
@@ -808,7 +810,7 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//th[contains(text(),'Name')]/../../../../../div[1]/div[3]/button")
 	private WebElement DeleteContactRecordInEditList;
-	
+
 	@FindBy(xpath = "//label[contains(text(),'Name')]/../div/input")
 	private WebElement SaveSearchNameTextBox;
 
@@ -859,13 +861,13 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "(//*[contains(text(),'My Saved Searches')])[2]/../../div[2]")
 	private WebElement FirstSavedSearchInDropdown;
-	
+
 	@FindBy(xpath = "//button[@type='submit' and contains(text(),'Delete')]")
 	private WebElement DeleteButton;
 
 	@FindBy(xpath = "//span[@class='h5' and contains(text(),'Saved Search')]")
 	private WebElement SavedSearchesCount;
-	
+
 	@FindBy(xpath = "//a[contains(text(),'Saved Search')]/i")
 	private WebElement SavedSearchTab;
 
@@ -898,7 +900,7 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "//*[text()='Companies']")
 	private WebElement CompanyTab;
-	
+
 	@FindBy(xpath = "(//*[contains(text(),'Delete')])[2]")
 	private WebElement DeletecontactList;
 
@@ -940,10 +942,10 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "(//div[contains(text(),'States')])[2]/../div[2]/input")
 	private WebElement getStatevalueselectionForContact;
-	
+
 	@FindBy(xpath = "(//span[contains(text(),'Human Verifie')])[1]")
 	private WebElement HumanVerifiedCompaniesCount;
-	
+
 	@FindBy(xpath = "(//a[@class='nav-link active' and @role='tab'])[2]")
 	private WebElement HumanVerifiedCompaniesCountSalesIntel;
 
@@ -1171,43 +1173,91 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "/html/body/modal-container/div[2]/div/app-create-company-list/div[2]/div[3]/div/div[3]/div[1]/div[2]/div/div[2]/div[3]/div/ul/li/a")
 	private WebElement export_From_List_Company_Human_Verified_Duplicates_Export_Original_Records;
-	
+
 	@FindBy(xpath = "(//div[@class='two-line-wrap'])[1]")
 	private WebElement FirstSearchedResult;
-	
+
 	@FindBy(xpath = "(//div[@class='row row-py'])[1]")
 	private WebElement FirstSearchedResultByEmployee;
-	
+
 	@FindBy(xpath = "(//div[@class='row row-py'])[1]")
 	private WebElement FirstSearchedResultByContacts;
-	
+
 	@FindBy(xpath = "//a[contains(text(),'Back to search results')]")
 	private WebElement back_To_Search_Results;
-	
+
 	@FindBy(xpath = "(//div[@class='col-12']//child::ul[@class='list-unstyled lists']//child::li)[1]//child::span[@class='a cursor-pointer']")
 	private WebElement saved_Search_Results;
-	
+
 	@FindBy(xpath = "//button[@type='button' and @class='btn btn-primary rounded']")
 	private WebElement create_List_Button;
-	
+
 	@FindBy(xpath = "//a[@class='dropdown-item' and contains(text(),'Create Company List')]")
 	private WebElement create_Company_List_Button;
-	
+
 	@FindBy(xpath = "//input[@type='text' and @placeholder='Enter a name for your list']")
 	private WebElement list_Name_Text_Field;
-	
+
 	@FindBy(xpath = "//label[contains(text(),'Choose File')]")
 	private WebElement choose_File_Button;
-	
+
 	@FindBy(xpath = "(//div[@class='col-sm-9 col-form-label'])[3]")
 	private WebElement availability_Combobox_Field;
-	
+
 	@FindBy(xpath = "//span[contains(text(),'Team') and @class='ng-option-label']")
 	private WebElement team_field;
-	
+
 	@FindBy(xpath = "//button[contains(text(),'Save List')]")
 	private WebElement save_List_Button;
-	
+
+	@FindBy(xpath = "//input[@id='username']")
+	private WebElement salesforce_Username;
+
+	@FindBy(xpath = "//input[@id='password']")
+	private WebElement salesforce_Password;
+
+	@FindBy(xpath = "//input[@id='Login']")
+	private WebElement salesforce_Login_Button;
+
+	@FindBy(xpath = "//input[@id='rememberUn']")
+	private WebElement salesforce_Remember_Me_Checkbox;
+
+	@FindBy(xpath = "//a[contains(text(),'Remind Me Later')]")
+	private List<WebElement> salesforce_Remind_Me_Later;
+
+	@FindBy(xpath = "(//span[@class='slds-truncate' and contains(text(),'SalesIntel')])[2]")
+	private WebElement salesforce_SalesIntel_Tab;
+
+	@FindBy(xpath = "(//span[contains(text(),'Leads')])[1]")
+	private WebElement salesforce_Leads_Button;
+
+	@FindBy(xpath = "//div[contains(text(),'New')]")
+	private WebElement salesforce_Leads_New_Button;
+
+	@FindBy(xpath = "//input[@type='text' and @placeholder='First Name']")
+	private WebElement salesforce_Leads_First_Name;
+
+	@FindBy(xpath = "//input[@type='text' and @placeholder='Last Name']")
+	private WebElement salesforce_Leads_Last_Name;
+
+	@FindBy(xpath = "//input[@type='text' and @name='Company']")
+	private WebElement salesforce_Leads_Company;
+
+	@FindBy(xpath = "//input[@type='text' and @name='Phone']")
+	private WebElement salesforce_Leads_Phone;
+
+	@FindBy(xpath = "//input[@type='text' and @name='Email']")
+	private WebElement salesforce_Leads_Email;
+
+	@FindBy(xpath = "(//button[@type='button' and contains(text(),'Save')])[2]")
+	private WebElement salesforce_Leads_Save_Button;
+
+	@FindBy(xpath = "//button[@type='button' and @class='btn btn-outline-secondary btn-sm ml-2 dropdown-toggle']")
+	private WebElement salesforce_Bulk_Actions_Button;
+
+	@FindBy(xpath = "//*[@id=\"CONTACTS\"]/section/app-contact-list/div/section/div/header/div/div[1]/ul/li[2]/a")
+	private WebElement salesforce_Export_Salesforce_Button;
+
 	public WebElement getRequestVerificationButton() {
 		return RequestVerificationButton;
 	}
@@ -2865,6 +2915,70 @@ public class LoginPage extends Global {
 
 	public WebElement getSave_List_Button() {
 		return save_List_Button;
+	}
+
+	public WebElement getSalesforce_Username() {
+		return salesforce_Username;
+	}
+
+	public WebElement getSalesforce_Password() {
+		return salesforce_Password;
+	}
+
+	public WebElement getSalesforce_Login_Button() {
+		return salesforce_Login_Button;
+	}
+
+	public WebElement getSalesforce_Remember_Me_Checkbox() {
+		return salesforce_Remember_Me_Checkbox;
+	}
+
+	public List<WebElement> getSalesforce_Remind_Me_Later() {
+		return salesforce_Remind_Me_Later;
+	}
+
+	public WebElement getSalesforce_SalesIntel_Tab() {
+		return salesforce_SalesIntel_Tab;
+	}
+
+	public WebElement getSalesforce_Leads_Button() {
+		return salesforce_Leads_Button;
+	}
+
+	public WebElement getSalesforce_Leads_New_Button() {
+		return salesforce_Leads_New_Button;
+	}
+
+	public WebElement getSalesforce_Leads_First_Name() {
+		return salesforce_Leads_First_Name;
+	}
+
+	public WebElement getSalesforce_Leads_Last_Name() {
+		return salesforce_Leads_Last_Name;
+	}
+
+	public WebElement getSalesforce_Leads_Company() {
+		return salesforce_Leads_Company;
+	}
+
+	public WebElement getSalesforce_Leads_Phone() {
+		return salesforce_Leads_Phone;
+	}
+
+	public WebElement getSalesforce_Leads_Email() {
+		return salesforce_Leads_Email;
+	}
+
+	public WebElement getSalesforce_Leads_Save_Button() {
+		return salesforce_Leads_Save_Button;
+	}
+
+	public WebElement getSalesforce_Bulk_Actions_Button() {
+		return salesforce_Bulk_Actions_Button;
+	}
+
+	public WebElement getSalesforce_Export_Salesforce_Button() {
+		return salesforce_Export_Salesforce_Button;
 	}
 
 }

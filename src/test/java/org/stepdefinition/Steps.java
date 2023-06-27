@@ -8373,8 +8373,8 @@ public class Steps extends Global {
 			/**
 			 * Click on Create List
 			 */
-			webDriverWait.until(ExpectedConditions.visibilityOf(
-					PageObjectManager.getInstance().getLoginPage().getCreate_List_Button()));
+			webDriverWait.until(ExpectedConditions
+					.visibilityOf(PageObjectManager.getInstance().getLoginPage().getCreate_List_Button()));
 			javascriptExecutor.executeScript("arguments[0].click();",
 					PageObjectManager.getInstance().getLoginPage().getCreate_List_Button());
 			Thread.sleep(2000);
@@ -8382,8 +8382,8 @@ public class Steps extends Global {
 			/**
 			 * Click on Create Company List
 			 */
-			webDriverWait.until(ExpectedConditions.visibilityOf(
-					PageObjectManager.getInstance().getLoginPage().getCreate_Company_List_Button()));
+			webDriverWait.until(ExpectedConditions
+					.visibilityOf(PageObjectManager.getInstance().getLoginPage().getCreate_Company_List_Button()));
 			javascriptExecutor.executeScript("arguments[0].click();",
 					PageObjectManager.getInstance().getLoginPage().getCreate_Company_List_Button());
 			Thread.sleep(3000);
@@ -8403,8 +8403,8 @@ public class Steps extends Global {
 			/**
 			 * Click on Choose File Button
 			 */
-			webDriverWait.until(ExpectedConditions.visibilityOf(
-					PageObjectManager.getInstance().getLoginPage().getChoose_File_Button()));
+			webDriverWait.until(ExpectedConditions
+					.visibilityOf(PageObjectManager.getInstance().getLoginPage().getChoose_File_Button()));
 			javascriptExecutor.executeScript("arguments[0].click();",
 					PageObjectManager.getInstance().getLoginPage().getChoose_File_Button());
 			Thread.sleep(2000);
@@ -8415,57 +8415,388 @@ public class Steps extends Global {
 			uploadCompanyListfilefromlocal(System.getProperty("user.dir")
 					+ "\\src\\test\\resources\\CSV_File_Store\\company_652023_0923pm.csv");
 			Thread.sleep(2000);
-			
+
 			/**
 			 * Click on Availability Combo Box
 			 */
-			webDriverWait.until(ExpectedConditions.visibilityOf(
-					PageObjectManager.getInstance().getLoginPage().getAvailability_Combobox_Field()));
+			webDriverWait.until(ExpectedConditions
+					.visibilityOf(PageObjectManager.getInstance().getLoginPage().getAvailability_Combobox_Field()));
 			clickButton(PageObjectManager.getInstance().getLoginPage().getAvailability_Combobox_Field());
 			Thread.sleep(2000);
-			
+
 			/**
 			 * Click on Team Option
 			 */
-			webDriverWait.until(ExpectedConditions.visibilityOf(
-					PageObjectManager.getInstance().getLoginPage().getTeam_field()));
+			webDriverWait.until(
+					ExpectedConditions.visibilityOf(PageObjectManager.getInstance().getLoginPage().getTeam_field()));
 			javascriptExecutor.executeScript("arguments[0].click();",
 					PageObjectManager.getInstance().getLoginPage().getTeam_field());
 			Thread.sleep(2000);
-			
+
 			/**
 			 * Click on Next
 			 */
-			webDriverWait.until(ExpectedConditions.visibilityOf(
-					PageObjectManager.getInstance().getLoginPage().getNextButton()));
+			webDriverWait.until(
+					ExpectedConditions.visibilityOf(PageObjectManager.getInstance().getLoginPage().getNextButton()));
 			javascriptExecutor.executeScript("arguments[0].click();",
 					PageObjectManager.getInstance().getLoginPage().getNextButton());
 			Thread.sleep(2000);
-			
+
 			/**
 			 * Click on Save List Button
 			 */
-			webDriverWait.until(ExpectedConditions.visibilityOf(
-					PageObjectManager.getInstance().getLoginPage().getSave_List_Button()));
+			webDriverWait.until(ExpectedConditions
+					.visibilityOf(PageObjectManager.getInstance().getLoginPage().getSave_List_Button()));
 			Thread.sleep(1000);
 			javascriptExecutor.executeScript("arguments[0].click();",
 					PageObjectManager.getInstance().getLoginPage().getSave_List_Button());
 			Thread.sleep(2000);
-			
+
 			/**
 			 * Click on Close Button
 			 */
-			webDriverWait.until(ExpectedConditions.visibilityOf(
-					PageObjectManager.getInstance().getLoginPage().getCloseButton()));
+			webDriverWait.until(
+					ExpectedConditions.visibilityOf(PageObjectManager.getInstance().getLoginPage().getCloseButton()));
 			Thread.sleep(1000);
 			javascriptExecutor.executeScript("arguments[0].click();",
 					PageObjectManager.getInstance().getLoginPage().getCloseButton());
 			Thread.sleep(5000);
-			System.out.println("Adding The Company Entry Into List View: "+(i+1));
-			
+			System.out.println("Adding The Company Entry Into List View: " + (i + 1));
+
 		}
 		log.info("Adding The Multiple Company Entry Into List View");
 
+	}
+
+	@Given("Launch the Sales Force url")
+	public void launch_the_Sales_Force_url() throws Throwable {
+		driver = getDriver();
+		maximizeWindow();
+		implicitWait();
+		launchURL(ReadDatafromJson("Contact_Name", "Salesforce_url"));
+	}
+
+	@When("Enter Valid Username in Sales Force")
+	public void enter_Valid_Username_in_Sales_Force() throws Throwable {
+		log = readLog4jData();
+		log.info("User is navigate to SalesIntel site");
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Username(),
+				ReadDatafromJson("Contact_Name", "Salesforce_Username"));
+		log.info("Enter Valid Username in Sales Force");
+	}
+
+	@When("Enter Valid Password in Sales Force")
+	public void enter_Valid_Password_in_Sales_Force() throws Throwable {
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Password(),
+				ReadDatafromJson("Contact_Name", "Salesforce_Password"));
+		log.info("Enter Valid Password in Sales Force");
+	}
+
+	@Then("Click On Login Button in Sales Force")
+	public void click_On_Login_Button_in_Sales_Force() throws Throwable {
+		JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+		javascriptExecutor.executeScript("arguments[0].click();",
+				PageObjectManager.getInstance().getLoginPage().getSalesforce_Login_Button());
+		log.info("Click On Login Button in Sales Force");
+		Thread.sleep(1000);
+	}
+
+	@When("Click On Remember me Checkbox")
+	public void click_On_Remember_me_Checkbox() throws Throwable {
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesforce_Remember_Me_Checkbox());
+		Thread.sleep(5000);
+	}
+
+	@When("Click On Remember me Later if popup comes")
+	public void click_On_Remember_me_Later_if_popup_comes() throws Throwable {
+		if (PageObjectManager.getInstance().getLoginPage().getSalesforce_Remind_Me_Later().size() != 0) {
+			clickButton(PageObjectManager.getInstance().getLoginPage().getSalesforce_Remind_Me_Later().get(0));
+		}
+
+	}
+
+	@When("Click on SalesIntel Tab")
+	public void click_on_SalesIntel_Tab() throws Throwable {
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 60);
+		webDriverWait.until(ExpectedConditions
+				.visibilityOf(PageObjectManager.getInstance().getLoginPage().getSalesforce_SalesIntel_Tab()));
+//		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesforce_SalesIntel_Tab());	
+		JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+		javascriptExecutor.executeScript("arguments[0].click();",
+				PageObjectManager.getInstance().getLoginPage().getSalesforce_SalesIntel_Tab());
+		Thread.sleep(2000);
+	}
+
+	@When("Enter Valid Username in SalesIntel Tab")
+	public void enter_Valid_Username_in_SalesIntel_Tab() throws Throwable {
+		log = readLog4jData();
+		log.info("User is navigate to SalesIntel site");
+		Thread.sleep(15000);
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@title='accessibility title']")));
+		Thread.sleep(2000);
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='iframeId']")));
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getUserName(),
+				ReadDatafromJson("Contact_Name", "Salesforce_Sales_Intel_Username"));
+		log.info("Enter Valid Username in SalesIntel Tab");
+	}
+
+	@When("Enter Valid Password in SalesIntel Tab")
+	public void enter_Valid_Password_in_SalesIntel_Tab() throws Throwable {
+		enterData(PageObjectManager.getInstance().getLoginPage().getPassword(),
+				ReadDatafromJson("Contact_Name", "Salesforce_Sales_Intel_Password"));
+		log.info("Enter Valid Password in SalesIntel Tab");
+	}
+
+	@When("Click on Leads Tab")
+	public void click_on_Leads_Tab() throws Throwable {
+		driver.switchTo().defaultContent();
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+		webDriverWait.until(ExpectedConditions
+				.visibilityOf(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Button()));
+//		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Button());
+		Thread.sleep(2000);
+		JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+		javascriptExecutor.executeScript("arguments[0].click();",
+				PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Button());
+		Thread.sleep(2000);
+	}
+
+	@When("Click on New Button")
+	public void click_on_New_Button() throws Throwable {
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+		webDriverWait.until(ExpectedConditions
+				.visibilityOf(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_New_Button()));
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_New_Button());
+		Thread.sleep(2000);
+	}
+
+	@When("Enter the First Lead - First Name Input Field")
+	public void enter_the_First_Lead_First_Name_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_First_Name(),
+				ReadDatafromJson("Contact_Name", "Lead1_First_Name"));
+		log.info("Enter the First Lead - First Name Input Field");
+	}
+
+	@When("Enter the First Lead - Company Input Field")
+	public void enter_the_First_Lead_Company_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Company(),
+				ReadDatafromJson("Contact_Name", "Lead1_Company"));
+		log.info("Enter the First Lead - Company Input Field");
+	}
+
+	@When("Enter the First Lead - Phone Input Field")
+	public void enter_the_First_Lead_Phone_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Phone(),
+				ReadDatafromJson("Contact_Name", "Lead1_Phone"));
+		log.info("Enter the First Lead - Phone Input Field");
+	}
+
+	@When("Enter the First Lead - Email Input Field")
+	public void enter_the_First_Lead_Email_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Email(),
+				ReadDatafromJson("Contact_Name", "Lead1_Email"));
+		log.info("Enter the First Lead - Phone Input Field");
+	}
+
+	@When("Click On Save Button")
+	public void click_On_Save_Button() throws Throwable {
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+		webDriverWait.until(ExpectedConditions
+				.visibilityOf(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Save_Button()));
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Save_Button());
+		Thread.sleep(2000);
+	}
+
+	@When("Enter the Second Lead - First Name Input Field")
+	public void enter_the_Second_Lead_First_Name_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_First_Name(),
+				ReadDatafromJson("Contact_Name", "Lead2_First_Name"));
+		log.info("Enter the Second Lead - First Name Input Field");
+	}
+
+	@When("Enter the Second Lead - Company Input Field")
+	public void enter_the_Second_Lead_Company_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Company(),
+				ReadDatafromJson("Contact_Name", "Lead2_Company"));
+		log.info("Enter the Second Lead - Company Input Field");
+	}
+
+	@When("Enter the Second Lead - Phone Input Field")
+	public void enter_the_Second_Lead_Phone_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Phone(),
+				ReadDatafromJson("Contact_Name", "Lead2_Phone"));
+		log.info("Enter the Second Lead - Phone Input Field");
+	}
+
+	@When("Enter the Second Lead - Email Input Field")
+	public void enter_the_Second_Lead_Email_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Email(),
+				ReadDatafromJson("Contact_Name", "Lead2_Email"));
+		log.info("Enter the Second Lead - Phone Input Field");
+	}
+
+	@When("Enter the Third Lead - First Name Input Field")
+	public void enter_the_Third_Lead_First_Name_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_First_Name(),
+				ReadDatafromJson("Contact_Name", "Lead3_First_Name"));
+		log.info("Enter the Third Lead - First Name Input Field");
+	}
+
+	@When("Enter the Third Lead - Company Input Field")
+	public void enter_the_Third_Lead_Company_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Company(),
+				ReadDatafromJson("Contact_Name", "Lead3_Company"));
+		log.info("Enter the Third Lead - Company Input Field");
+	}
+
+	@When("Enter the Third Lead - Phone Input Field")
+	public void enter_the_Third_Lead_Phone_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Phone(),
+				ReadDatafromJson("Contact_Name", "Lead3_Phone"));
+		log.info("Enter the Third Lead - Phone Input Field");
+	}
+
+	@When("Enter the Third Lead - Email Input Field")
+	public void enter_the_Third_Lead_Email_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Email(),
+				ReadDatafromJson("Contact_Name", "Lead3_Email"));
+		log.info("Enter the Third Lead - Phone Input Field");
+	}
+
+	@When("Enter the Fourth Lead - First Name Input Field")
+	public void enter_the_Fourth_Lead_First_Name_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_First_Name(),
+				ReadDatafromJson("Contact_Name", "Lead4_First_Name"));
+		log.info("Enter the Fourth Lead - Phone Input Field");
+	}
+
+	@When("Enter the Fourth Lead - Company Input Field")
+	public void enter_the_Fourth_Lead_Company_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Company(),
+				ReadDatafromJson("Contact_Name", "Lead4_Company"));
+		log.info("Enter the Fourth Lead - Company Input Field");
+	}
+
+	@When("Enter the Fourth Lead - Phone Input Field")
+	public void enter_the_Fourth_Lead_Phone_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Phone(),
+				ReadDatafromJson("Contact_Name", "Lead4_Phone"));
+		log.info("Enter the Fourth Lead - Phone Input Field");
+	}
+
+	@When("Enter the Fourth Lead - Email Input Field")
+	public void enter_the_Fourth_Lead_Email_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Email(),
+				ReadDatafromJson("Contact_Name", "Lead4_Email"));
+		log.info("Enter the Fourth Lead - Phone Input Field");
+	}
+
+	@When("Enter the Fifth Lead - First Name Input Field")
+	public void enter_the_Fifth_Lead_First_Name_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_First_Name(),
+				ReadDatafromJson("Contact_Name", "Lead5_First_Name"));
+		log.info("Enter the Fifth Lead - First Name Input Field");
+	}
+
+	@When("Enter the Fifth Lead - Company Input Field")
+	public void enter_the_Fifth_Lead_Company_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Company(),
+				ReadDatafromJson("Contact_Name", "Lead5_Company"));
+		log.info("Enter the Fifth Lead - Company Input Field");
+	}
+
+	@When("Enter the Fifth Lead - Phone Input Field")
+	public void enter_the_Fifth_Lead_Phone_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Phone(),
+				ReadDatafromJson("Contact_Name", "Lead5_Phone"));
+		log.info("Enter the Fifth Lead - Phone Input Field");
+	}
+
+	@When("Enter the Fifth Lead - Email Input Field")
+	public void enter_the_Fifth_Lead_Email_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Email(),
+				ReadDatafromJson("Contact_Name", "Lead5_Email"));
+		log.info("Enter the Fifth Lead - Phone Input Field");
+	}
+
+	@When("Enter the First Lead - Last Name Input Field")
+	public void enter_the_First_Lead_Last_Name_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Last_Name(),
+				ReadDatafromJson("Contact_Name", "Lead1_Last_Name"));
+		log.info("Enter the First Lead - Last Name Input Field");
+	}
+
+	@When("Enter the Second Lead - Last Name Input Field")
+	public void enter_the_Second_Lead_Last_Name_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Last_Name(),
+				ReadDatafromJson("Contact_Name", "Lead2_Last_Name"));
+		log.info("Enter the Second Lead - Last Name Input Field");
+	}
+
+	@When("Enter the Third Lead - Last Name Input Field")
+	public void enter_the_Third_Lead_Last_Name_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Last_Name(),
+				ReadDatafromJson("Contact_Name", "Lead3_Last_Name"));
+		log.info("Enter the Third Lead - Last Name Input Field");
+	}
+
+	@When("Enter the Fourth Lead - Last Name Input Field")
+	public void enter_the_Fourth_Lead_Last_Name_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Last_Name(),
+				ReadDatafromJson("Contact_Name", "Lead4_Last_Name"));
+		log.info("Enter the Fourth Lead - Last Name Input Field");
+	}
+
+	@When("Enter the Fifth Lead - Last Name Input Field")
+	public void enter_the_Fifth_Lead_Last_Name_Input_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getSalesforce_Leads_Last_Name(),
+				ReadDatafromJson("Contact_Name", "Lead5_Last_Name"));
+		log.info("Enter the Fifth Lead - Last Name Input Field");
+	}
+
+	@When("Click On Export Salesforce option")
+	public void click_On_Export_Salesforce_option() throws Throwable {
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+		webDriverWait.until(ExpectedConditions
+				.visibilityOf(PageObjectManager.getInstance().getLoginPage().getSalesforce_Export_Salesforce_Button()));
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesforce_Export_Salesforce_Button());
+		Thread.sleep(2000);
+	}
+	
+	@When("Click On Bulk Actions Button")
+	public void click_On_Bulk_Actions_Button() throws Throwable {
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+		webDriverWait.until(ExpectedConditions
+				.visibilityOf(PageObjectManager.getInstance().getLoginPage().getSalesforce_Bulk_Actions_Button()));
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesforce_Bulk_Actions_Button());
+		Thread.sleep(2000);
 	}
 
 }

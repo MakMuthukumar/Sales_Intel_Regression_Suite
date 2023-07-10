@@ -13,6 +13,10 @@
    	And Click On Remember me Later if popup comes
    	
   @First @Sanity @Sales_Intel_Enrich_Intel
+  Scenario: To validate Salesforce application - To change Switching to Classic Experience or Switching to Lightning Experience
+  	When To Change the Switching to Classic Experience or Switching to Lightning Experience
+   	
+  @First @Sanity @Sales_Intel_Enrich_Intel
   Scenario: To validate SalesIntel application Valid User Username and Valid Password
   	When Click on SalesIntel Tab
     And Enter Valid Username in SalesIntel Tab 
@@ -26,7 +30,7 @@
   	And Click on Search Button
   	And Select Multiple contact to Add Contact List
   	And Click On Bulk Actions Button
-  	And Click On Export Salesforce option
+  	And Click On Export To CSV option
   	And Wait for Page load
   	And Click On Submit Button
    	
@@ -89,4 +93,25 @@
   	And Enter the Fifth Lead - Phone Input Field
   	And Enter the Fifth Lead - Email Input Field
   	And Click On Save Button
+  	
+  @First @Sanity @Sales_Intel_Enrich_Intel
+  Scenario: To validate Salesforce application - New Sales Enrichment Leads Functionality
+  	When Wait for Page load
+  	And Click On Sales Enrichment Label
+  	And Click on New Sales Enrichment Button
+  	And Click On Leads in Sales Enrichment
+  	And Enter the Enrichment Task Name min 5 characters
+  	And Select The Filter Dropdown option as Email
+  	And Enter The Email Data into Value text Field
+  	And Click On Analyze Button
+  	And Click On Result of Sales Enrichment Task
+  	And Click On Start Enrichment Button
+  	And Get The Count Of Data Enrichment
+  	And Click On Yes Button In Data Enrichment
+  	
+  @First @Sanity @Sales_Intel_Enrich_Intel
+  Scenario: To validate Salesforce application - Logout Functionality
+  	When Click On Sales force Settings Icon
+  	And Click On Logout Button
+  	
   	

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">SalesIntel RevDriver Automation</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 27, 2023 21:27:20</span></a>
+<a href="#"><span class="badge badge-primary">Jul 10, 2023 17:29:30</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -76,7 +71,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -84,33 +79,33 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Sales_Intel_Enrich_Intel</a><a class="dropdown-item" href="#">@First</a><a class="dropdown-item" href="#">@Sanity</a>
+<a class="dropdown-item" href="#">@Sanity</a><a class="dropdown-item" href="#">@Sales_Intel_Enrich_Intel</a><a class="dropdown-item" href="#">@First</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
-          <div class="status-avatar fail-bg">
-            <i class="fa fa-times text-white"></i>
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
           </div>
           <div class="test-detail">
             <span class="meta text-white badge badge-sm"></span>
             <p class="name">To Validate Application Sales Intel Enrich Intel</p>
-            <p class="text-sm"><span>21:27:21 pm</span> / <span>154.526 secs</span></p>
+            <p class="text-sm"><span>17:29:31 pm</span> / <span>347.662 secs</span></p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
 <div class='float-right'><span class='badge badge-default'>#test-id=1</span></div>
-<h5 class="test-status text-fail">To Validate Application Sales Intel Enrich Intel</h5>
-<span class='badge badge-success'>06.27.2023 21:27:21</span>
-<span class='badge badge-danger'>06.27.2023 21:29:55</span>
-<span class='badge badge-default'>154.526 secs</span>
+<h5 class="test-status text-pass">To Validate Application Sales Intel Enrich Intel</h5>
+<span class='badge badge-success'>07.10.2023 17:29:31</span>
+<span class='badge badge-danger'>07.10.2023 17:35:19</span>
+<span class='badge badge-default'>347.662 secs</span>
 </div>
 </div>
 </div>
@@ -170,7 +165,23 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>To validate SalesIntel application Valid User Username and Valid Password</div>
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>To validate Salesforce application - To change Switching to Classic Experience or Switching to Lightning Experience</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Steps.to_Change_the_Switching_to_Classic_Experience_or_Switching_to_Lightning_Experience()">
+                <span>When To Change the Switching to Classic Experience or Switching to Lightning Experience</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>To validate SalesIntel application Valid User Username and Valid Password</div>
       </div>
     </div>
         <div class="collapse">
@@ -201,13 +212,10 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="21"><span class="badge log fail-bg mr-2">Fail</span>To validate SalesIntel application - Selecting multiple contacts</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
+        <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>To validate SalesIntel application - Selecting multiple contacts</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="Steps.wait_for_Page_load()">
                 <span>When Wait for Page load</span>
@@ -235,7 +243,7 @@
       </div>
               </div>
               <div class="step pass-bg" title="Steps.click_On_Export_Salesforce_option()">
-                <span>And Click On Export Salesforce option</span>
+                <span>And Click On Export To CSV option</span>
       <div>
       </div>
               </div>
@@ -244,59 +252,10 @@
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="Steps.click_On_Submit_Button()">
+              <div class="step pass-bg" title="Steps.click_On_Submit_Button()">
                 <span>And Click On Submit Button</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit' and contains(text(),'Submit')]"}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NHCLPT520', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 10a55de9220c1f718af3342ff7ef371e
-*** Element info: {Using=xpath, value=//button[@type='submit' and contains(text(),'Submit')]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
-	at org.stepdefinition.Steps.click_On_Submit_Button(Steps.java:7310)
-	at ?.Click On Submit Button(file:src/test/resources/Features/New_UI_View/TC_51_Sales_Intel_EnrichIntel.feature:31)
-</textarea>
-      
       </div>
-              </div>
-              <div class="step pass-bg" >
-                <span>BeforeExection.afterExecutedClass(Scenario)</span>
-      <div>
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded1.png' src="../embedded1.png">
-    
-    </div></div>
-</div>
               </div>
           </div>
         </div>
@@ -304,7 +263,7 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>To validate Salesforce application - adding multiple contacts(First Lead) in leads page</div>
+        <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>To validate Salesforce application - adding multiple contacts(First Lead) in leads page</div>
       </div>
     </div>
         <div class="collapse">
@@ -357,6 +316,98 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
           </div>
         </div>
   </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="48"><span class="badge log pass-bg mr-2">Pass</span>To validate Salesforce application - New Sales Enrichment Leads Functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Steps.wait_for_Page_load()">
+                <span>When Wait for Page load</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.click_On_Sales_Enrichment_Label()">
+                <span>And Click On Sales Enrichment Label</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.click_on_New_Sales_Enrichment_Button()">
+                <span>And Click on New Sales Enrichment Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.click_On_Leads_in_Sales_Enrichment()">
+                <span>And Click On Leads in Sales Enrichment</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.enter_the_Enrichment_Task_Name_min_characters(Integer)">
+                <span>And Enter the Enrichment Task Name min 5 characters</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.select_The_Filter_Dropdown_option_as_Email()">
+                <span>And Select The Filter Dropdown option as Email</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.enter_The_Email_Data_into_Value_text_Field()">
+                <span>And Enter The Email Data into Value text Field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.click_On_Analyze_Button()">
+                <span>And Click On Analyze Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.click_On_Result_of_Sales_Enrichment_Task()">
+                <span>And Click On Result of Sales Enrichment Task</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.click_On_Start_Enrichment_Button()">
+                <span>And Click On Start Enrichment Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.get_The_Count_Of_Data_Enrichment()">
+                <span>And Get The Count Of Data Enrichment</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.click_On_Yes_Button_In_Data_Enrichment()">
+                <span>And Click On Yes Button In Data Enrichment</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="63"><span class="badge log pass-bg mr-2">Pass</span>To validate Salesforce application - Logout Functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Steps.click_On_Sales_force_Settings_Icon()">
+                <span>When Click On Sales force Settings Icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Steps.click_On_Logout_Button()">
+                <span>And Click On Logout Button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
 </div>
           </div>
         </li>
@@ -369,78 +420,7 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left">
-<li>
-<a href="">
-<span class="font-size-14">Exception</span>
-</a>
-</li>
-</ul>
-<ul class="tools text-right">
-<li>
-<a href="#">
-<span class="badge badge-primary">1</span>
-</a>
-</li>
-</ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="open-test">
-<div class="test-detail">
-<p class="name">org.openqa.selenium.NoSuchElementException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.NoSuchElementException</h4>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:29:03 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='30'>And Click On Submit Button</a>
-<div class="">
-<span class="badge badge-default">To validate SalesIntel application - Selecting multiple contacts</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-tools">
-<ul>
-<li>
-<a class="back-to-test" href="javascript:void(0)">
-<i class="fa fa-arrow-left"></i>
-</a>
-</li>
-</ul>
-</div>
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Tags</span></a></li></ul>
@@ -451,173 +431,15 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>4</span>
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@Sales_Intel_Enrich_Intel</p>
-<p class="duration text-sm">5 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Sales_Intel_Enrich_Intel</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>21:27:21 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>To validate Salesforce application Launching application</a>
-<div class="">
-<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application Launching application</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>21:27:26 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='6'>To validate Salesforce application Valid User Username and Valid Password</a>
-<div class="">
-<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application Valid User Username and Valid Password</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>21:27:51 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='14'>To validate SalesIntel application Valid User Username and Valid Password</a>
-<div class="">
-<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate SalesIntel application Valid User Username and Valid Password</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:28:23 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='21'>To validate SalesIntel application - Selecting multiple contacts</a>
-<div class="">
-<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate SalesIntel application - Selecting multiple contacts</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>21:29:25 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='32'>To validate Salesforce application - adding multiple contacts(First Lead) in leads page</a>
-<div class="">
-<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application - adding multiple contacts(First Lead) in leads page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>4</span>
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@First</p>
-<p class="duration text-sm">5 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@First</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>21:27:21 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>To validate Salesforce application Launching application</a>
-<div class="">
-<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application Launching application</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>21:27:26 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='6'>To validate Salesforce application Valid User Username and Valid Password</a>
-<div class="">
-<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application Valid User Username and Valid Password</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>21:27:51 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='14'>To validate SalesIntel application Valid User Username and Valid Password</a>
-<div class="">
-<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate SalesIntel application Valid User Username and Valid Password</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:28:23 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='21'>To validate SalesIntel application - Selecting multiple contacts</a>
-<div class="">
-<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate SalesIntel application - Selecting multiple contacts</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>21:29:25 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='32'>To validate Salesforce application - adding multiple contacts(First Lead) in leads page</a>
-<div class="">
-<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application - adding multiple contacts(First Lead) in leads page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>4</span>
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>8</span>
 </span>
 <p class="name">@Sanity</p>
-<p class="duration text-sm">5 tests</p>
+<p class="duration text-sm">8 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@Sanity</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -630,7 +452,7 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>21:27:21 pm</td>
+<td>17:29:31 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>To validate Salesforce application Launching application</a>
 <div class="">
@@ -640,7 +462,7 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>21:27:26 pm</td>
+<td>17:29:36 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='6'>To validate Salesforce application Valid User Username and Valid Password</a>
 <div class="">
@@ -650,19 +472,29 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>21:27:51 pm</td>
+<td>17:30:20 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='14'>To validate SalesIntel application Valid User Username and Valid Password</a>
+<a href="#" class="linked" test-id='1' id='14'>To validate Salesforce application - To change Switching to Classic Experience or Switching to Lightning Experience</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application - To change Switching to Classic Experience or Switching to Lightning Experience</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:30:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>To validate SalesIntel application Valid User Username and Valid Password</a>
 <div class="">
 <span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate SalesIntel application Valid User Username and Valid Password</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:28:23 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:31:03 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='21'>To validate SalesIntel application - Selecting multiple contacts</a>
+<a href="#" class="linked" test-id='1' id='25'>To validate SalesIntel application - Selecting multiple contacts</a>
 <div class="">
 <span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate SalesIntel application - Selecting multiple contacts</span>
 </div>
@@ -670,11 +502,243 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>21:29:25 pm</td>
+<td>17:31:45 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='32'>To validate Salesforce application - adding multiple contacts(First Lead) in leads page</a>
+<a href="#" class="linked" test-id='1' id='36'>To validate Salesforce application - adding multiple contacts(First Lead) in leads page</a>
 <div class="">
 <span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application - adding multiple contacts(First Lead) in leads page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:32:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='48'>To validate Salesforce application - New Sales Enrichment Leads Functionality</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application - New Sales Enrichment Leads Functionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:35:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='63'>To validate Salesforce application - Logout Functionality</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application - Logout Functionality</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+</span>
+<p class="name">@Sales_Intel_Enrich_Intel</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Sales_Intel_Enrich_Intel</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:29:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>To validate Salesforce application Launching application</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application Launching application</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:29:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>To validate Salesforce application Valid User Username and Valid Password</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application Valid User Username and Valid Password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:30:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>To validate Salesforce application - To change Switching to Classic Experience or Switching to Lightning Experience</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application - To change Switching to Classic Experience or Switching to Lightning Experience</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:30:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>To validate SalesIntel application Valid User Username and Valid Password</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate SalesIntel application Valid User Username and Valid Password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:31:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='25'>To validate SalesIntel application - Selecting multiple contacts</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate SalesIntel application - Selecting multiple contacts</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:31:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>To validate Salesforce application - adding multiple contacts(First Lead) in leads page</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application - adding multiple contacts(First Lead) in leads page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:32:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='48'>To validate Salesforce application - New Sales Enrichment Leads Functionality</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application - New Sales Enrichment Leads Functionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:35:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='63'>To validate Salesforce application - Logout Functionality</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application - Logout Functionality</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+</span>
+<p class="name">@First</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@First</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:29:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>To validate Salesforce application Launching application</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application Launching application</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:29:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>To validate Salesforce application Valid User Username and Valid Password</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application Valid User Username and Valid Password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:30:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>To validate Salesforce application - To change Switching to Classic Experience or Switching to Lightning Experience</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application - To change Switching to Classic Experience or Switching to Lightning Experience</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:30:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>To validate SalesIntel application Valid User Username and Valid Password</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate SalesIntel application Valid User Username and Valid Password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:31:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='25'>To validate SalesIntel application - Selecting multiple contacts</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate SalesIntel application - Selecting multiple contacts</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:31:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>To validate Salesforce application - adding multiple contacts(First Lead) in leads page</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application - adding multiple contacts(First Lead) in leads page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:32:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='48'>To validate Salesforce application - New Sales Enrichment Leads Functionality</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application - New Sales Enrichment Leads Functionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:35:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='63'>To validate Salesforce application - Logout Functionality</a>
+<div class="">
+<span class="badge badge-default">To Validate Application Sales Intel Enrich Intel.To validate Salesforce application - Logout Functionality</span>
 </div>
 </td>
 </tr>
@@ -704,25 +768,25 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 27, 2023 21:27:20</h3>
+<h3>Jul 10, 2023 17:29:30</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 27, 2023 21:29:56</h3>
+<h3>Jul 10, 2023 17:35:19</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -738,12 +802,12 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> features failed,
+<small data-tooltip='0%'><b>0</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -761,9 +825,9 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='80%'><b>4</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>8</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='20%'><b>1</b> scenarios failed,
+<small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -781,9 +845,9 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='96%'><b>27</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>42</b> steps passed</small></div>
 <div>
-<small data-tooltip='3%'><b>1</b> steps failed,
+<small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -798,28 +862,28 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
+<td>@Sanity</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
 <td>@Sales_Intel_Enrich_Intel</td>
-<td>4</td>
-<td>1</td>
+<td>8</td>
 <td>0</td>
 <td>0</td>
-<td>80%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 <tr>
 <td>@First</td>
-<td>4</td>
-<td>1</td>
+<td>8</td>
 <td>0</td>
 <td>0</td>
-<td>80%</td>
-</tr>
-<tr>
-<td>@Sanity</td>
-<td>4</td>
-<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>80%</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -830,19 +894,19 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 4,
-failChild: 1,
+passChild: 8,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 27,
-failGrandChild: 1,
+passGrandChild: 42,
+failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,

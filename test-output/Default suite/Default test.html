@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 27 21:27:20 IST 2023</td>
+<td>Started on:</td><td>Mon Jul 10 17:29:30 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>156 seconds (156498 ms)</td>
+<tr><td>Total time:</td><td>349 seconds (349598 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,96 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate SalesIntel application - Selecting multiple contacts", "To Validate Application Sales Intel Enrich Intel"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type=&apos;submit&apos; and contains(text(),&apos;Submit&apos;)]&quot;}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NHCLPT520&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 10a55de9220c1f718af3342ff7ef371e
-*** Element info: {Using=xpath, value=//button[@type=&apos;submit&apos; and contains(text(),&apos;Submit&apos;)]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
-	at org.stepdefinition.Steps.click_On_Submit_Button(Steps.java:7310)
-	at ?.Click On Submit Button(file:src/test/resources/Features/New_UI_View/TC_51_Sales_Intel_EnrichIntel.feature:31)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2007031139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2007031139'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type=&apos;submit&apos; and contains(text(),&apos;Submit&apos;)]&quot;}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NHCLPT520&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\400121~1.LNT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 10a55de9220c1f718af3342ff7ef371e
-*** Element info: {Using=xpath, value=//button[@type=&apos;submit&apos; and contains(text(),&apos;Submit&apos;)]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
-	at org.stepdefinition.Steps.click_On_Submit_Button(Steps.java:7310)
-	at ?.Click On Submit Button(file:src/test/resources/Features/New_UI_View/TC_51_Sales_Intel_EnrichIntel.feature:31)
-</pre></div></td>
-<td>62</td>
-<td>org.runner.Runner@67d18ed7</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -167,12 +77,17 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
 <tr>
 <td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate Salesforce application Launching application", "To Validate Application Sales Intel Enrich Intel"</td>
 <td></td>
-<td>5</td>
+<td>4</td>
 <td>org.runner.Runner@67d18ed7</td></tr>
 <tr>
 <td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate Salesforce application Valid User Username and Valid Password", "To Validate Application Sales Intel Enrich Intel"</td>
 <td></td>
-<td>25</td>
+<td>44</td>
+<td>org.runner.Runner@67d18ed7</td></tr>
+<tr>
+<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate Salesforce application - To change Switching to Classic Experience or Switching to Lightning Experience", "To Validate Application Sales Intel Enrich Intel"</td>
+<td></td>
+<td>11</td>
 <td>org.runner.Runner@67d18ed7</td></tr>
 <tr>
 <td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate SalesIntel application Valid User Username and Valid Password", "To Validate Application Sales Intel Enrich Intel"</td>
@@ -180,9 +95,24 @@ Session ID: 10a55de9220c1f718af3342ff7ef371e
 <td>31</td>
 <td>org.runner.Runner@67d18ed7</td></tr>
 <tr>
+<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate SalesIntel application - Selecting multiple contacts", "To Validate Application Sales Intel Enrich Intel"</td>
+<td></td>
+<td>42</td>
+<td>org.runner.Runner@67d18ed7</td></tr>
+<tr>
 <td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate Salesforce application - adding multiple contacts(First Lead) in leads page", "To Validate Application Sales Intel Enrich Intel"</td>
 <td></td>
-<td>29</td>
+<td>30</td>
+<td>org.runner.Runner@67d18ed7</td></tr>
+<tr>
+<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate Salesforce application - New Sales Enrichment Leads Functionality", "To Validate Application Sales Intel Enrich Intel"</td>
+<td></td>
+<td>177</td>
+<td>org.runner.Runner@67d18ed7</td></tr>
+<tr>
+<td title='org.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: org.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate Salesforce application - Logout Functionality", "To Validate Application Sales Intel Enrich Intel"</td>
+<td></td>
+<td>6</td>
 <td>org.runner.Runner@67d18ed7</td></tr>
 </table><p>
 </body>

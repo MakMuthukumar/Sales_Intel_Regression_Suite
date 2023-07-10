@@ -9,17 +9,13 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends Global {
 
-//	public static String Readuserdata()
-//	{
-//		String name = readPropertyFileData().getProperty("FirstName1");
-//		return name;
-//	}
-//	public static String name = Readuserdata();
-//
-//	public static String usernamexpath = "//*[contains(text(),"\"name\"")]";
+	public LoginPage() throws Throwable {
+		PageFactory.initElements(driver, this);
+	}
 
 	@FindBy(xpath = "//input[@placeholder='Search by Email Address']")
 	private WebElement EmailInputBoxInResearch;
+
 	@FindBy(xpath = "//input[@type='text']")
 	private WebElement userName;
 
@@ -1255,8 +1251,60 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//button[@type='button' and @class='btn btn-outline-secondary btn-sm ml-2 dropdown-toggle']")
 	private WebElement salesforce_Bulk_Actions_Button;
 
-	@FindBy(xpath = "//*[@id=\"CONTACTS\"]/section/app-contact-list/div/section/div/header/div/div[1]/ul/li[2]/a")
+	@FindBy(xpath = "//*[@id=\"CONTACTS\"]/section/app-contact-list/div/section/div/header/div/div/ul/li[1]/a")
 	private WebElement salesforce_Export_Salesforce_Button;
+	
+	@FindBy(xpath = "//*[@id=\"CONTACTS\"]/section/app-contact-list/div/section/div/header/div/div/ul/li[8]/a")
+	private WebElement salesforce_Export_CSV_Button;
+
+	@FindBy(xpath = "//img[@class='icon noicon']")
+	private List<WebElement> switch_To_Lighting_View_Profile_Image;
+
+	@FindBy(xpath = "//a[contains(text(),'Switch to Salesforce Classic')]")
+	private WebElement switch_To_Salesforce_Classic_Label;
+
+	@FindBy(xpath = "//a[contains(text(),'Switch to Lightning Experience') and @class='switch-to-lightning']")
+	private List<WebElement> switch_To_Lightning_Experience_Label;
+
+	@FindBy(xpath = "//span[contains(text(),'SalesIntel EnrichIntel')]")
+	private WebElement salesIntel_EnrichIntel_Label;
+
+	@FindBy(xpath = "//button[@title='New Enrichment']")
+	private WebElement new_Enrichment_Button;
+
+	@FindBy(xpath = "(//div[contains(text(),'Enrichment Task Name (min 5 characters) * ')]//following::input)[1]")
+	private WebElement enrichment_Task_Name_Label;
+
+	@FindBy(xpath = "//button[contains(text(),'Lead')]")
+	private WebElement new_Enrichment_Lead_Button;
+
+	@FindBy(xpath = "//select[@class='slds-select custom-select custom-select-sm slds-m-top_xx-small']")
+	private WebElement new_Enrichment_Lead_Filter_Dropdown;
+
+	@FindBy(xpath = "//input[@class='slds-m-top_xx-small slds-border']")
+	private WebElement new_Enrichment_Lead_Filter_Input_Field;
+	
+	@FindBy(xpath = "//button[@title='Analyze']")
+	private WebElement new_Enrichment_Analyze_Button;
+	
+	@FindBy(xpath = "//button[@title='Refresh Status']")
+	private WebElement new_Enrichment_Lead_Refresh_Status;
+	
+	@FindBy(xpath = "//span[contains(text(),'Start Enrichment')]")
+	private WebElement new_Enrichment_Lead_Start_Enrichment;
+	
+	@FindBy(xpath = "//div[contains(@id,'prompt-message-wrapper-')]")
+	private WebElement new_Enrichment_Lead_Start_Enrichment_Data;
+	
+	@FindBy(xpath = "//span[contains(text(),'Yes')]")
+	private WebElement new_Enrichment_Lead_Start_Enrichment_Data_Yes_Button;
+	
+	@FindBy(xpath = "//a[contains(text(),'Log Out')]")
+	private WebElement salesforce_Logout;
+	
+	@FindBy(xpath = "//button[@type='button' and contains(@class,'slds-button branding-userProfile-button')]")
+	private WebElement salesforce_Settings_Icon;
+
 
 	public WebElement getRequestVerificationButton() {
 		return RequestVerificationButton;
@@ -1328,10 +1376,6 @@ public class LoginPage extends Global {
 
 	public WebElement getEmailInputBoxInResearch() {
 		return EmailInputBoxInResearch;
-	}
-
-	public LoginPage() throws Throwable {
-		PageFactory.initElements(driver, this);
 	}
 
 	public WebElement getUserName() {
@@ -2979,6 +3023,74 @@ public class LoginPage extends Global {
 
 	public WebElement getSalesforce_Export_Salesforce_Button() {
 		return salesforce_Export_Salesforce_Button;
+	}
+
+	public List<WebElement> getSwitch_To_Lighting_View_Profile_Image() {
+		return switch_To_Lighting_View_Profile_Image;
+	}
+
+	public WebElement getSwitch_To_Salesforce_Classic_Label() {
+		return switch_To_Salesforce_Classic_Label;
+	}
+
+	public List<WebElement> getSwitch_To_Lightning_Experience_Label() {
+		return switch_To_Lightning_Experience_Label;
+	}
+
+	public WebElement getSalesIntel_EnrichIntel_Label() {
+		return salesIntel_EnrichIntel_Label;
+	}
+
+	public WebElement getNew_Enrichment_Button() {
+		return new_Enrichment_Button;
+	}
+
+	public WebElement getEnrichment_Task_Name_Label() {
+		return enrichment_Task_Name_Label;
+	}
+
+	public WebElement getNew_Enrichment_Lead_Button() {
+		return new_Enrichment_Lead_Button;
+	}
+
+	public WebElement getNew_Enrichment_Lead_Filter_Dropdown() {
+		return new_Enrichment_Lead_Filter_Dropdown;
+	}
+
+	public WebElement getNew_Enrichment_Lead_Filter_Input_Field() {
+		return new_Enrichment_Lead_Filter_Input_Field;
+	}
+
+	public WebElement getNew_Enrichment_Analyze_Button() {
+		return new_Enrichment_Analyze_Button;
+	}
+
+	public WebElement getSalesforce_Export_CSV_Button() {
+		return salesforce_Export_CSV_Button;
+	}
+
+	public WebElement getNew_Enrichment_Lead_Refresh_Status() {
+		return new_Enrichment_Lead_Refresh_Status;
+	}
+
+	public WebElement getNew_Enrichment_Lead_Start_Enrichment() {
+		return new_Enrichment_Lead_Start_Enrichment;
+	}
+
+	public WebElement getNew_Enrichment_Lead_Start_Enrichment_Data() {
+		return new_Enrichment_Lead_Start_Enrichment_Data;
+	}
+
+	public WebElement getNew_Enrichment_Lead_Start_Enrichment_Data_Yes_Button() {
+		return new_Enrichment_Lead_Start_Enrichment_Data_Yes_Button;
+	}
+
+	public WebElement getSalesforce_Logout() {
+		return salesforce_Logout;
+	}
+
+	public WebElement getSalesforce_Settings_Icon() {
+		return salesforce_Settings_Icon;
 	}
 
 }

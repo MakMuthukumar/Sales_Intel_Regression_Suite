@@ -5,7 +5,7 @@
     <classes>
       <class name="org.runner.Runner">
         <methods>
-          <include name="runScenario" invocation-numbers="3"/>
+          <include name="runScenario" invocation-numbers="7"/>
           <include name="tearDownClass"/>
           <include name="allureReportCleanup"/>
           <include name="cucumberReportGenerate"/>

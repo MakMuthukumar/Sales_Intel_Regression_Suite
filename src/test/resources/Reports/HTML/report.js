@@ -109,6 +109,38 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
+  "name": "To validate Salesforce application - To change Switching to Classic Experience or Switching to Lightning Experience",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@First"
+    },
+    {
+      "name": "@Sanity"
+    },
+    {
+      "name": "@Sales_Intel_Enrich_Intel"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "To Change the Switching to Classic Experience or Switching to Lightning Experience",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.to_Change_the_Switching_to_Classic_Experience_or_Switching_to_Lightning_Experience()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
   "name": "To validate SalesIntel application Valid User Username and Valid Password",
   "description": "",
   "keyword": "Scenario",
@@ -240,7 +272,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click On Export Salesforce option",
+  "name": "Click On Export To CSV option",
   "keyword": "And "
 });
 formatter.match({
@@ -267,10 +299,8 @@ formatter.match({
   "location": "Steps.click_On_Submit_Button()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@type\u003d\u0027submit\u0027 and contains(text(),\u0027Submit\u0027)]\"}\n  (Session info: chrome\u003d114.0.5735.134)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NHCLPT520\u0027, ip: \u0027192.168.0.102\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\400121~1.LNT\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 10a55de9220c1f718af3342ff7ef371e\n*** Element info: {Using\u003dxpath, value\u003d//button[@type\u003d\u0027submit\u0027 and contains(text(),\u0027Submit\u0027)]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy28.getWrappedElement(Unknown Source)\r\n\tat org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)\r\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\r\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)\r\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\r\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)\r\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)\r\n\tat org.stepdefinition.Steps.click_On_Submit_Button(Steps.java:7310)\r\n\tat ✽.Click On Submit Button(file:src/test/resources/Features/New_UI_View/TC_51_Sales_Intel_EnrichIntel.feature:31)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -379,6 +409,190 @@ formatter.step({
 });
 formatter.match({
   "location": "Steps.click_On_Save_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate Salesforce application - New Sales Enrichment Leads Functionality",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@First"
+    },
+    {
+      "name": "@Sanity"
+    },
+    {
+      "name": "@Sales_Intel_Enrich_Intel"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Wait for Page load",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.wait_for_Page_load()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Sales Enrichment Label",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_On_Sales_Enrichment_Label()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on New Sales Enrichment Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_on_New_Sales_Enrichment_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Leads in Sales Enrichment",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_On_Leads_in_Sales_Enrichment()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter the Enrichment Task Name min 5 characters",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.enter_the_Enrichment_Task_Name_min_characters(Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Select The Filter Dropdown option as Email",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.select_The_Filter_Dropdown_option_as_Email()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter The Email Data into Value text Field",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.enter_The_Email_Data_into_Value_text_Field()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Analyze Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_On_Analyze_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Result of Sales Enrichment Task",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_On_Result_of_Sales_Enrichment_Task()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Start Enrichment Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_On_Start_Enrichment_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Get The Count Of Data Enrichment",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.get_The_Count_Of_Data_Enrichment()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Yes Button In Data Enrichment",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_On_Yes_Button_In_Data_Enrichment()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate Salesforce application - Logout Functionality",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@First"
+    },
+    {
+      "name": "@Sanity"
+    },
+    {
+      "name": "@Sales_Intel_Enrich_Intel"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Sales force Settings Icon",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Steps.click_On_Sales_force_Settings_Icon()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click On Logout Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Steps.click_On_Logout_Button()"
 });
 formatter.result({
   "status": "passed"

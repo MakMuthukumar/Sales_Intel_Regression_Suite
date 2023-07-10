@@ -58,6 +58,7 @@ public class Steps extends Global {
 			After_Reomoved_Special_Character_Actual_Contacts_Machine_Verified_Count;
 	public String actual_Export_Companies_Details, actual_Export_Contacts_Details;
 	public Integer Before_Preview_Credit_Count, After_Preview_Credit_Count;
+	public static String actual_Data_Of_Enrichment_Task_Name;
 
 	// @Given("Launch the url")
 //	public void launch_the_url() {
@@ -8781,15 +8782,15 @@ public class Steps extends Global {
 		log.info("Enter the Fifth Lead - Last Name Input Field");
 	}
 
-	@When("Click On Export Salesforce option")
+	@When("Click On Export To CSV option")
 	public void click_On_Export_Salesforce_option() throws Throwable {
 		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
 		webDriverWait.until(ExpectedConditions
-				.visibilityOf(PageObjectManager.getInstance().getLoginPage().getSalesforce_Export_Salesforce_Button()));
-		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesforce_Export_Salesforce_Button());
+				.visibilityOf(PageObjectManager.getInstance().getLoginPage().getSalesforce_Export_CSV_Button()));
+		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesforce_Export_CSV_Button());
 		Thread.sleep(2000);
 	}
-	
+
 	@When("Click On Bulk Actions Button")
 	public void click_On_Bulk_Actions_Button() throws Throwable {
 		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
@@ -8797,6 +8798,164 @@ public class Steps extends Global {
 				.visibilityOf(PageObjectManager.getInstance().getLoginPage().getSalesforce_Bulk_Actions_Button()));
 		clickButton(PageObjectManager.getInstance().getLoginPage().getSalesforce_Bulk_Actions_Button());
 		Thread.sleep(2000);
+	}
+
+	@When("To Change the Switching to Classic Experience or Switching to Lightning Experience")
+	public void to_Change_the_Switching_to_Classic_Experience_or_Switching_to_Lightning_Experience() throws Throwable {
+
+		if (PageObjectManager.getInstance().getLoginPage().getSwitch_To_Lightning_Experience_Label().size() != 0) {
+			JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+			javascriptExecutor.executeScript("arguments[0].click();",
+					PageObjectManager.getInstance().getLoginPage().getSwitch_To_Lightning_Experience_Label().get(0));
+			Thread.sleep(2000);
+		} else {
+			JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+			javascriptExecutor.executeScript("arguments[0].click();",
+					PageObjectManager.getInstance().getLoginPage().getSwitch_To_Lighting_View_Profile_Image().get(0));
+			Thread.sleep(2000);
+			WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+			webDriverWait.until(ExpectedConditions.visibilityOf(
+					PageObjectManager.getInstance().getLoginPage().getSwitch_To_Salesforce_Classic_Label()));
+			Thread.sleep(2000);
+			javascriptExecutor.executeScript("arguments[0].click();",
+					PageObjectManager.getInstance().getLoginPage().getSwitch_To_Salesforce_Classic_Label());
+			Thread.sleep(2000);
+		}
+
+	}
+
+	@When("Click On Sales Enrichment Label")
+	public void click_On_Sales_Enrichment_Label() throws Throwable {
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+		webDriverWait.until(ExpectedConditions
+				.visibilityOf(PageObjectManager.getInstance().getLoginPage().getSalesIntel_EnrichIntel_Label()));
+		JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+		javascriptExecutor.executeScript("arguments[0].click();",
+				PageObjectManager.getInstance().getLoginPage().getSalesIntel_EnrichIntel_Label());
+		Thread.sleep(2000);
+	}
+
+	@When("Click On Leads in Sales Enrichment")
+	public void click_On_Leads_in_Sales_Enrichment() throws Throwable {
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+		webDriverWait.until(ExpectedConditions
+				.visibilityOf(PageObjectManager.getInstance().getLoginPage().getNew_Enrichment_Lead_Button()));
+		clickButton(PageObjectManager.getInstance().getLoginPage().getNew_Enrichment_Lead_Button());
+		Thread.sleep(2000);
+	}
+
+	@When("Enter the Enrichment Task Name min {int} characters")
+	public void enter_the_Enrichment_Task_Name_min_characters(Integer int1) throws Throwable {
+		Thread.sleep(2000);
+		String date_Format = new SimpleDateFormat("dd_MM_yyyy_HH_mm_ss").format(new Date());
+		String actual_Data_From_Json_Data = ReadDatafromJson("Contact_Name", "Enrichment Task Name");
+		actual_Data_Of_Enrichment_Task_Name = actual_Data_From_Json_Data+date_Format;
+		enterData(PageObjectManager.getInstance().getLoginPage().getEnrichment_Task_Name_Label(),
+				actual_Data_Of_Enrichment_Task_Name);
+		log.info("Enter the Enrichment Task Name min 5 characters");
+	}
+
+	@When("Select The Filter Dropdown option as Email")
+	public void select_The_Filter_Dropdown_option_as_Email() throws Throwable {
+		Thread.sleep(2000);
+		Select select = new Select(
+				PageObjectManager.getInstance().getLoginPage().getNew_Enrichment_Lead_Filter_Dropdown());
+		select.selectByVisibleText("Email");
+		Thread.sleep(2000);
+	}
+
+	@When("Enter The Email Data into Value text Field")
+	public void enter_The_Email_Data_into_Value_text_Field() throws Throwable {
+		Thread.sleep(2000);
+		enterData(PageObjectManager.getInstance().getLoginPage().getNew_Enrichment_Lead_Filter_Input_Field(),
+				ReadDatafromJson("Contact_Name", "Lead1_Email"));
+		log.info("Enter The Email Data into Value text Field");
+	}
+
+	@When("Click On Analyze Button")
+	public void click_On_Analyze_Button() throws Throwable {
+		Thread.sleep(2000);
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+		webDriverWait.until(ExpectedConditions
+				.visibilityOf(PageObjectManager.getInstance().getLoginPage().getNew_Enrichment_Analyze_Button()));
+		clickButton(PageObjectManager.getInstance().getLoginPage().getNew_Enrichment_Analyze_Button());
+		Thread.sleep(2000);
+		log.info("Click On Analyze Button");
+	}
+
+	@When("Click on New Sales Enrichment Button")
+	public void click_on_New_Sales_Enrichment_Button() throws Throwable {
+		log = readLog4jData();
+		log.info("User is navigate to SalesIntel Enrichment site");
+		Thread.sleep(15000);
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@title='accessibility title']")));
+		Thread.sleep(2000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getNew_Enrichment_Button());
+		Thread.sleep(2000);
+	}
+
+	@When("Click On Result of Sales Enrichment Task")
+	public void click_On_Result_of_Sales_Enrichment_Task() throws Throwable {
+		Thread.sleep(120000);
+		clickButton(PageObjectManager.getInstance().getLoginPage().getNew_Enrichment_Lead_Refresh_Status());
+		System.out.println("The Actual Data Enrichment Name:" + actual_Data_Of_Enrichment_Task_Name);
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+		webDriverWait.until(ExpectedConditions.visibilityOf(
+				driver.findElement(By.xpath("(//a[contains(text(),'" + actual_Data_Of_Enrichment_Task_Name + "')])"))));
+		Thread.sleep(2000);
+		clickButton(
+				driver.findElement(By.xpath("(//a[contains(text(),'" + actual_Data_Of_Enrichment_Task_Name + "')])")));
+	}
+
+	@When("Click On Start Enrichment Button")
+	public void click_On_Start_Enrichment_Button() throws Throwable {
+		Thread.sleep(2000);
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+		webDriverWait.until(ExpectedConditions.visibilityOf(
+				PageObjectManager.getInstance().getLoginPage().getNew_Enrichment_Lead_Start_Enrichment()));
+		clickButton(PageObjectManager.getInstance().getLoginPage().getNew_Enrichment_Lead_Start_Enrichment());
+	}
+
+	@When("Get The Count Of Data Enrichment")
+	public void get_The_Count_Of_Data_Enrichment() throws Throwable {
+		Thread.sleep(2000);
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+		webDriverWait.until(ExpectedConditions.visibilityOf(
+				PageObjectManager.getInstance().getLoginPage().getNew_Enrichment_Lead_Start_Enrichment_Data()));
+		System.err.println("The Actual Data From Salesforce Site is: " + PageObjectManager.getInstance().getLoginPage()
+				.getNew_Enrichment_Lead_Start_Enrichment_Data().getText());
+	}
+
+	@When("Click On Yes Button In Data Enrichment")
+	public void click_On_Yes_Button_In_Data_Enrichment() throws Throwable {
+		Thread.sleep(2000);
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+		webDriverWait.until(ExpectedConditions.visibilityOf(PageObjectManager.getInstance().getLoginPage()
+				.getNew_Enrichment_Lead_Start_Enrichment_Data_Yes_Button()));
+		clickButton(PageObjectManager.getInstance().getLoginPage()
+				.getNew_Enrichment_Lead_Start_Enrichment_Data_Yes_Button());
+	}
+
+	@When("Click On Sales force Settings Icon")
+	public void click_On_Sales_force_Settings_Icon() throws Throwable {
+		Thread.sleep(2000);
+		driver.switchTo().defaultContent();
+		Thread.sleep(2000);
+		JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+		javascriptExecutor.executeScript("arguments[0].click();",
+				PageObjectManager.getInstance().getLoginPage().getSalesforce_Settings_Icon());
+		
+	}
+
+	@When("Click On Logout Button")
+	public void click_On_Logout_Button() throws Throwable {
+		Thread.sleep(2000);
+		WebDriverWait webDriverWait = new WebDriverWait(driver, 20);
+		webDriverWait.until(
+				ExpectedConditions.visibilityOf(PageObjectManager.getInstance().getLoginPage().getSalesforce_Logout()));
+		JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+		javascriptExecutor.executeScript("arguments[0].click();",
+				PageObjectManager.getInstance().getLoginPage().getSalesforce_Logout());
 	}
 
 }
